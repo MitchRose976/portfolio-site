@@ -1,19 +1,14 @@
-import React from "react";
 import styled from "styled-components";
 
-function Watermark() {
-  return (
-    <>
-      <WatermarkText>CSS / Javascript / React</WatermarkText>
-    </>
-  );
-}
-
-const WatermarkText = styled.p`
+const Watermark = styled.p`
   font-size: 2rem;
-  ${"" /* color: rgba(140, 255, 152, 1); */}
   color: rgba(162, 167, 165, 0.6);
   padding-left: 4rem;
+
+  @media (max-width: 768px) {
+      font-size: 1.2rem;
+      padding-left: 1.2rem;
+  }
 `;
 
 export default Watermark;
