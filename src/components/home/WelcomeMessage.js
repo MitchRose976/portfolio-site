@@ -6,7 +6,7 @@ import Container from "../Container.js";
 
 function WelcomeMessage() {
   return (
-    <Container>
+    <Container style={{border: '1px solid white;'}}>
       <Text style={{ marginTop: "5rem" }}>Hey there!</Text>
       <Name>I'm Mitch,</Name>
       <Text>Your next Front-End Developer.</Text>

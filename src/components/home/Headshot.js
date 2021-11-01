@@ -5,16 +5,21 @@ import Container from "../Container";
 
 const Headshot = () => {
   return (
-    <Container>
+    <ImgContainer >
       <Image src={logo} />
-    </Container>
+    </ImgContainer>
   );
 };
+
+const ImgContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`
 
 const Image = styled.img`
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   border: 1px solid white;
   justify-content: center;
 
@@ -22,7 +27,7 @@ const Image = styled.img`
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 70%;
   }
 `;
 
