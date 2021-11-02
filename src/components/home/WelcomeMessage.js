@@ -7,7 +7,7 @@ import Container from "../Container.js";
 function WelcomeMessage() {
   return (
     <Container style={{border: '1px solid white;'}}>
-      <Text style={{ marginTop: "5rem" }}>Hey there!</Text>
+      <Text style={{ marginTop: "1rem" }}>Hey there!</Text>
       <Name>I'm Mitch,</Name>
       <Text>Your next Front-End Developer.</Text>
       <Watermark>CSS / Javascript / React</Watermark>
@@ -31,7 +31,7 @@ const Button = styled.button`
   font-size: 1.3rem;
   color: #ffbcb5;
   margin: 3rem 0 0 4rem;
-  padding: 5px;
+  padding: 0 0 5px 0;
   width: 10rem;
   cursor: pointer;
   border-radius: 10px;
