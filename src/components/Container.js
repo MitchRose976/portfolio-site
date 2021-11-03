@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  border: 1px solid white;
+  ${'' /* border: 1px solid white; */}
   color: white;
   grid-area: ${(props) => props.area};
+  margin: ${(props) => props.margin};
+  padding: ${(props) => props.padding};
+  className: ${(props) => props.className};
 
-  @media (max-width: 768px) {
-      text-align: center;
+  @media (max-width: 1024px) {
+    text-align: center;
   }
 `;
 

@@ -1,1 +1,10 @@
+.headshot-container {
+  margin: 0 auto;
+  padding: 3rem 6rem 0 6rem;
+}
 
+@media (max-width: 1024px) {
+  .headshot-container {
+    padding: 3rem 0 0 0;
+  }
+}
