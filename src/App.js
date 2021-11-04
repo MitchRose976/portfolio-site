@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import Container from "./components/Container";
 import WelcomeMessage from "./components/home/WelcomeMessage";
 import Headshot from "./components/home/Headshot";
+import About from "./components/about/About";
 import styled from "styled-components";
 import './App.css';
 
@@ -27,7 +28,7 @@ function App() {
       <Container area='Content4' />
       {/* About */}
       <Container area='About' >
-        About
+        <About/>
       </Container>
       {/* Projects */}
       <Container area="Projects">

@@ -4,7 +4,7 @@ import Watermark from "./Watermark.js";
 import Name from "./Name.js";
 import Container from "../Container.js";
 
-function WelcomeMessage() {
+const WelcomeMessage = () => {
   return (
     <Container>
       <Text style={{ marginTop: "5rem" }}>Hey there!</Text>
