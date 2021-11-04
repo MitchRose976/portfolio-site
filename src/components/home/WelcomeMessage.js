@@ -7,7 +7,7 @@ import Container from "../Container.js";
 function WelcomeMessage() {
   return (
     <Container>
-      <Text style={{ marginTop: "4rem" }}>Hey there!</Text>
+      <Text style={{ marginTop: "5rem" }}>Hey there!</Text>
       <Name>I'm Mitch,</Name>
       <Text>Your next Front-End Developer.</Text>
       <Watermark>CSS / Javascript / React</Watermark>
@@ -17,16 +17,16 @@ function WelcomeMessage() {
 }
 
 const Text = styled.h2`
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: white;
   padding-left: 2rem;
 
   @media (max-width: 1024px) {
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding-left: 0;
   }
   @media (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-left: 1.2rem;
   }
 `;
