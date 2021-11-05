@@ -5,6 +5,7 @@ import WelcomeMessage from "./components/home/WelcomeMessage";
 import Headshot from "./components/home/Headshot";
 import About from "./components/about/About";
 import styled from "styled-components";
+import AboutBackground from './components/about/coding.jpeg';
 import './App.css';
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
       {/* Empty container for padding */}
       <Container area='Content4' />
       {/* About */}
-      <Container area='About' >
+      <Container area='About' style={{backgroundImage: `url(${AboutBackground})` }}>
         <About/>
       </Container>
       {/* Projects */}

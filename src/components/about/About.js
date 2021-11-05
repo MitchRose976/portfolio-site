@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "../Header";
 import SubHeader from "../SubHeader";
 import Container from "../Container";
+//import background from "./coding.jpeg";
 
 function About() {
   return (
@@ -20,11 +21,11 @@ function About() {
       <SubHeader>"What does he do?"</SubHeader>
       <Text>
         Great question! I build unique and stunning User Interface Designs in
-        HTML, CSS, Bootstrap, Javascript, and React. My goal is the same for
+        HTML, CSS, Javascript, and React. My goal is the same for
         every project. To create a UI experience that will leave every user
         feeling great.
       </Text>
-      <SubHeader>"Whats the Motivation here?"</SubHeader>
+      <SubHeader>"Whats the Motivation?"</SubHeader>
       <Text>
         How many times are you on a website and think "I'd love to find whoever
         designed this website and .... " ---- Well, you know the rest. I want to

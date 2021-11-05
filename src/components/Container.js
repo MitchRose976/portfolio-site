@@ -7,6 +7,7 @@ export const Container = styled.div`
   margin: ${(props) => props.margin};
   padding: ${(props) => props.padding};
   classname: ${(props) => props.className};
+  
 
   @media (max-width: 1024px) {
     text-align: center;
