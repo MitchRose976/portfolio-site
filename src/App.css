@@ -3,6 +3,53 @@
   padding: 3rem 4rem 0 4rem;
 }
 
+.carousel {
+  position: relative;
+  padding: 5rem 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-image {
+  object-fit: contain;
+  max-height: 80%;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 10px 20px 5px #3E3E3D;
+} 
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s ease;
+  transform: scale(1.08);
+}
+
 @media (max-width: 1500px) {
     .headshot-container {
       padding: 3rem 1rem 0 1rem;

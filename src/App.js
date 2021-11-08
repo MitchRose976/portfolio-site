@@ -7,6 +7,8 @@ import About from "./components/about/About";
 import styled from "styled-components";
 import AboutBackground from './components/about/coding.jpeg';
 import './App.css';
+import Carousel from "./components/carousel/Carousel";
+import {SliderData} from './components/carousel/SliderData';
 
 function App() {
   return (
@@ -32,8 +34,8 @@ function App() {
         <About/>
       </Container>
       {/* Projects */}
-      <Container area="Projects">
-        Projects
+      <Container area="Projects" className="carousel">
+        <Carousel slides={SliderData}/>
       </Container>
       {/* Contact */}
       <Container area='Contact'>

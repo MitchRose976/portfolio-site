@@ -1,39 +1,45 @@
-import React from 'react';
-import styled from "styled-components";
+import React, { useState } from "react";
+import { SliderData } from "./SliderData";
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
-function Carousel() {
-    return (
-        <div>
-            
-        </div>
-    )
+function Carousel({ slides }) {
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrent(current === length - 1 ? length - 1 : current - 1);
+  };
+
+  if (!Array.isArray(slides) || slides.length === 0) {
+    return null;
+  }
+
+  return (
+    <>
+      <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
+      <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+      {SliderData.map((slide, index) => {
+        return (
+          <div
+            className={index === current ? "slide active" : "slide"}
+            key={index}
+          >
+            {index === current && (
+              <img
+                src={slide.image}
+                alt="project image"
+                className="slider-image"
+              />
+            )}
+          </div>
+        );
+      })}
+    </>
+  );
 }
 
-// Holds entire carousel
-const CarouselContainer = styled.div`
-
-`;
-
-// These are used for the left and right arrows that toggle to next image
-// Also used for the small little buttons at the bottom used to slide to specific item
-const CarouselButton = styled.button`
-
-`;
-
-// Holds the entire list of Carousel Items
-const CarouselTrack = styled.ul`
-
-`;
-
-// Each inidividual carousel item
-const CarouselSlide = styled.li`
-
-`;
-
-const CarouselNav = styled.div`
-
-`;
-
-
-
-export default Carousel
+export default Carousel;
