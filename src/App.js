@@ -9,6 +9,7 @@ import AboutBackground from './components/about/coding.jpeg';
 import './App.css';
 import Carousel from "./components/carousel/Carousel";
 import {SliderData} from './components/carousel/SliderData';
+import ImageCard from "./components/carousel/ImageCard";
 
 function App() {
   return (
@@ -35,7 +36,8 @@ function App() {
       </Container>
       {/* Projects */}
       <Container area="Projects" className="carousel">
-        <Carousel slides={SliderData}/>
+        {/* <Carousel slides={SliderData}/> */}
+        <ImageCard />
       </Container>
       {/* Contact */}
       <Container area='Contact'>
