@@ -5,12 +5,15 @@ export const Container = styled.div`
   color: white;
   grid-area: ${(props) => props.area};
   margin: ${(props) => props.margin};
+  margin: ${(props) => props.marginTop};
   padding: ${(props) => props.padding};
+  padding-top: ${(props) => props.paddingTop};
   classname: ${(props) => props.className};
   height: ${(props) => props.height};
   width: ${(props) => props.width};
   position: ${(props) => props.position};
   border-radius: ${(props) => props.borderRadius};
+  background-color: ${(props) => props.backgroundColor};
   
   @media (max-width: 1024px) {
     text-align: center;

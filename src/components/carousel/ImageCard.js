@@ -6,7 +6,7 @@ import Pic from './pic1.jpg';
 
 const ImageCard = () => {
     return (
-        <Container height="70%" width="50%" position="relative" borderRadius="10px">
+        <Container height="70%" width="50%" position="relative" borderRadius="20px" backgroundColor="#C5D1D3">
             <ProjectImage src={Pic}/>
             <ProjectLabel>
                 <ProjectTitle>Project 1</ProjectTitle>
@@ -18,9 +18,10 @@ const ImageCard = () => {
 
 const ProjectImage = styled.img`
     width: 100%;
-    height: 70%;
+    height: 60%;
     object-fit: contain;
     justify-content: center;
+    background-color: #C5D1D3;
 `;
 
 const ProjectLabel = styled.div`
@@ -31,10 +32,15 @@ const ProjectLabel = styled.div`
     left: 0;
     right: 0;
     border: 1px solid red;
+    line-height: 3;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-flow: column;
     background-color: white;
     color: black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 `;
 
 const ProjectTitle = styled.h2`
@@ -42,8 +48,8 @@ const ProjectTitle = styled.h2`
     background-color: white;
 `;
 
-const ProjectDescription = styled.span`
-    display: inline;
+const ProjectDescription = styled.p`
+    margin: 0 auto;
     background-color: white;
 `;
 
