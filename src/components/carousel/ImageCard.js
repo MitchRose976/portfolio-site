@@ -7,7 +7,9 @@ import Pic from './pic1.jpg';
 const ImageCard = () => {
     return (
         <Container height="70%" width="50%" position="relative" borderRadius="20px" backgroundColor="#C5D1D3">
+            <Container  height="70%" borderRadius="20px" position="relative" display="flex" justifyContent="center" alignItems="center" overflow="hidden" margin="2rem 2rem 5rem 2rem">
             <ProjectImage src={Pic}/>
+            </Container>
             <ProjectLabel>
                 <ProjectTitle>Project 1</ProjectTitle>
                 <ProjectDescription>This is a project about my favourite tabletop strategy game</ProjectDescription>
@@ -17,11 +19,10 @@ const ImageCard = () => {
 }
 
 const ProjectImage = styled.img`
-    width: 100%;
-    height: 60%;
+    max-width: 100%;
+    border-radius: 20px;
     object-fit: contain;
-    justify-content: center;
-    background-color: #C5D1D3;
+
 `;
 
 const ProjectLabel = styled.div`

@@ -14,6 +14,10 @@ export const Container = styled.div`
   position: ${(props) => props.position};
   border-radius: ${(props) => props.borderRadius};
   background-color: ${(props) => props.backgroundColor};
+  display: ${(props) => props.display};
+  justify-content: ${(props) => props.justifyContent};
+  align-items: ${(props) => props.alignItems};
+  overflow: ${(props) => props.overflow};
   
   @media (max-width: 1024px) {
     text-align: center;
