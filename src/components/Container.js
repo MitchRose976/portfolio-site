@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  border: 1px solid white;
+  ${'' /* border: 1px solid white; */}
   color: white;
   grid-area: ${(props) => props.area};
   margin: ${(props) => props.margin};
@@ -18,6 +18,7 @@ export const Container = styled.div`
   justify-content: ${(props) => props.justifyContent};
   align-items: ${(props) => props.alignItems};
   overflow: ${(props) => props.overflow};
+  box-shadow: ${(props) => props.boxShadow};
   
   @media (max-width: 1024px) {
     text-align: center;
