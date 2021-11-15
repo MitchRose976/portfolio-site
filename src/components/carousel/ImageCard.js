@@ -2,8 +2,20 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Container from "../Container";
 import Pic from "./pic1.jpg";
+import { FaArrowRight } from "react-icons/fa";
 
 const ImageCard = () => {
+
+    const [flip, setFlip] = useState(false);
+
+    const flipCardToBack = () => {
+        setFlip(true);
+    }
+
+    const flipCardToFront = () => {
+        setFlip(false);
+    }
+
   return (
     <Wrapper>
       {/* Front Side */}
@@ -26,7 +38,12 @@ const ImageCard = () => {
         <ProjectDescription>
           This is a project about my favourite tabletop strategy game
         </ProjectDescription>
-        <InfoButton>More Info</InfoButton>
+        <InfoButton flipped={flip} onClick={flipCardToBack}>
+          More Info{" "}
+          <FaArrowRight
+            style={{ backgroundColor: "rgba(66, 16, 106, 0.01)" }}
+          />
+        </InfoButton>
       </ProjectLabel>
       {/* Back Side */}
       <Container display="none">
@@ -109,18 +126,31 @@ const ProjectDescription = styled.p`
 const InfoButton = styled.button`
   width: 10rem;
   height: 2rem;
-  background-color: white;
+  background-color: rgba(66, 16, 106, 0.7);
   ${"" /* border: 2px solid #9C0D38; */}
   border: 2px solid #42106A;
-  color: black;
+  color: white;
   font-size: 1rem;
   border-radius: 20px;
   cursor: pointer;
-  transition-property: background;
-  transition-duration: 500ms;
+  transition-property: background, width, box-shadow, letter-spacing;
+  transition-duration: 100ms;
   &:hover {
-    background: rgba(66, 16, 106, 0.8);
+    background: rgba(66, 16, 106, 1);
     color: white;
+    width: 11rem;
+    box-shadow: 0.6rem 0.6rem 0.8rem black;
+    letter-spacing: 1.5px;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 8rem;
+    height: 1.8rem;
+    font-size: 0.9rem;
+    &:hover {
+        width: 9rem;
+        letter-spacing: 1.3px;
+        box-shadow: 0.4rem 0.4rem 0.8rem black;
+    }
   }
 `;
 
