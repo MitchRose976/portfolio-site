@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Container from "../Container";
 import Pic from "./pic1.jpg";
@@ -6,6 +6,7 @@ import Pic from "./pic1.jpg";
 const ImageCard = () => {
   return (
     <Wrapper>
+      {/* Front Side */}
       <Container
         height="70%"
         width="99%"
@@ -27,25 +28,32 @@ const ImageCard = () => {
         </ProjectDescription>
         <InfoButton>More Info</InfoButton>
       </ProjectLabel>
+      {/* Back Side */}
+      <Container display="none">
+        <ProjectTitle>Project 1</ProjectTitle>
+        <ProjectDescription>
+          This is a project about my favourite tabletop strategy game
+        </ProjectDescription>
+      </Container>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
-    height: 70%;
-    width: 50%;
-    position: relative;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 1rem 1rem 1rem black;
-    @media only screen and (max-width: 1024px) {
-        height: 90%;
-        width: 60%;
-    }
-    @media only screen and (max-width: 500px) {
-        height: 95%;
-        width: 65%;
-    }
+  height: 70%;
+  width: 50%;
+  position: relative;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1rem 1rem 1rem black;
+  @media only screen and (max-width: 1024px) {
+    height: 90%;
+    width: 60%;
+  }
+  @media only screen and (max-width: 500px) {
+    height: 95%;
+    width: 65%;
+  }
 `;
 
 const ProjectImage = styled.img`
@@ -63,7 +71,6 @@ const ProjectLabel = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  ${"" /* border: 1px solid red; */}
   line-height: 2;
   display: flex;
   align-items: center;
@@ -74,7 +81,7 @@ const ProjectLabel = styled.div`
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   @media (max-width: 1024px) {
-      line-height: 2;
+    line-height: 2;
   }
 `;
 
@@ -83,10 +90,10 @@ const ProjectTitle = styled.h2`
   background-color: white;
   font-size: 2rem;
   @media only screen and (max-width: 1024px) {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
   @media only screen and (max-width: 500px) {
-      font-size: 1.3rem;
+    font-size: 1.3rem;
   }
 `;
 
@@ -95,26 +102,26 @@ const ProjectDescription = styled.p`
   background-color: white;
   font-size: 1.2rem;
   @media only screen and (max-width: 768px) {
-      font-size: 0.8rem;
+    font-size: 0.8rem;
   }
 `;
 
 const InfoButton = styled.button`
-    width: 10rem;
-    height: 2rem;
-    background-color: white;
-    ${'' /* border: 2px solid #9C0D38; */}
-    border: 2px solid #42106A;
-    color: black;
-    font-size: 1rem;
-    border-radius: 20px;
-    cursor: pointer;
-    transition-property: background;
-    transition-duration: 500ms;
-    &:hover {
-        background: rgba(66, 16, 106, 0.8);
-        color: white;
-    }
+  width: 10rem;
+  height: 2rem;
+  background-color: white;
+  ${"" /* border: 2px solid #9C0D38; */}
+  border: 2px solid #42106A;
+  color: black;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition-property: background;
+  transition-duration: 500ms;
+  &:hover {
+    background: rgba(66, 16, 106, 0.8);
+    color: white;
+  }
 `;
 
 export default ImageCard;
