@@ -8,8 +8,10 @@ import styled from "styled-components";
 import AboutBackground from './components/about/coding.jpeg';
 import './App.css';
 import Carousel from "./components/carousel/Carousel";
+import Carousel2 from "./components/carousel/Carousel2";
 import {SliderData} from './components/carousel/SliderData';
-import ImageCard from "./components/carousel/ImageCard";
+import ImageCardFront from "./components/carousel/ImageCardFront";
+import ImageCardBack from "./components/carousel/ImageCardBack";
 
 function App() {
   return (
@@ -37,7 +39,8 @@ function App() {
       {/* Projects */}
       <Container area="Projects" className="carousel">
         {/* <Carousel slides={SliderData}/> */}
-        <ImageCard />
+        <ImageCardFront/>
+        <ImageCardBack/>
       </Container>
       {/* Contact */}
       <Container area='Contact'>

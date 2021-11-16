@@ -19,6 +19,7 @@ export const Container = styled.div`
   align-items: ${(props) => props.alignItems};
   overflow: ${(props) => props.overflow};
   box-shadow: ${(props) => props.boxShadow};
+  backface-visibility: ${(props) => props.backfaceVisibility};
   
   @media (max-width: 1024px) {
     text-align: center;

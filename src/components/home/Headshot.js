@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "./Headshot_bw3.png";
+import logo from "../../images/Headshot_bw3.png";
 
 const Headshot = () => {
   return <Image src={logo} />;
