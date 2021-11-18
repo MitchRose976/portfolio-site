@@ -11,7 +11,7 @@ import Container from "../Container";
 // import Pic from "../../images/pic1.jpg";
 // import { FaArrowRight } from "react-icons/fa";
 
-const ImageCard = () => {
+const ImageCard = ({ flip }) => {
 
     const [flip, setFlip] = useState(false);
 

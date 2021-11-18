@@ -40,7 +40,6 @@ function App() {
       <Container area="Projects" className="carousel">
         {/* <Carousel slides={SliderData}/> */}
         <ImageCardFront/>
-        <ImageCardBack/>
       </Container>
       {/* Contact */}
       <Container area='Contact'>

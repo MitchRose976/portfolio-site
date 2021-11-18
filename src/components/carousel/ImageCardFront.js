@@ -46,7 +46,7 @@ const ImageCardFront = () => {
         <ProjectDescription>
           This is a project about my favourite tabletop strategy game
         </ProjectDescription>
-        <InfoButton>
+        <InfoButton onClick={() => setFlip(!flip)}>
           More Info{" "}
           <FaArrowRight
             style={{ backgroundColor: "rgba(66, 16, 106, 0.01)" }}
