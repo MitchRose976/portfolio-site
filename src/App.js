@@ -12,6 +12,7 @@ import Carousel2 from "./components/carousel/Carousel2";
 import {SliderData} from './components/carousel/SliderData';
 import ImageCardFront from "./components/carousel/ImageCardFront";
 import ImageCardBack from "./components/carousel/ImageCardBack";
+import Footer from "./components/Footer/footer";
 
 function App() {
   return (
@@ -47,7 +48,7 @@ function App() {
       </Container>
       {/* Footer */}
       <Container area='Footer'>
-        Footer
+        <Footer/>
       </Container>
     </GridWrapper>
   );
