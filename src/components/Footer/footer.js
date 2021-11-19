@@ -6,25 +6,40 @@ function Footer() {
     return (
         <Container
         width="100%"
-        height="10rem"
+        position="relative"
         color="white "
 
         >
         <FooterLogoDiv>
             <FooterLogo>Footer</FooterLogo>
         </FooterLogoDiv>
-        <FooterLinks>Footer</FooterLinks>
+        <FooterLinks>
+        <FooterList>
+            <FooterListItem>
+                <FooterLink>Home</FooterLink>
+            </FooterListItem>
+            <FooterListItem>
+            <FooterLink>Projects</FooterLink>
+            </FooterListItem>
+            <FooterListItem>
+            <FooterLink>Contact</FooterLink>
+            </FooterListItem>
+        </FooterList>
+        </FooterLinks>
         </Container>
     )
 }
 
 const FooterLogoDiv = styled.div`
     width: 30%;
+    height: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid red;
     color: white;
+    position: absolute;
+    left: 0;
 `;
 
 const FooterLogo = styled.h1`
@@ -32,11 +47,32 @@ const FooterLogo = styled.h1`
 `;
 
 const FooterLinks = styled.div`
-    
     border: 1px solid blue;
+    width: 70%;
+    height: 10rem;
+    display: flex;
+    position: absolute;
+    right: 0;
+    justify-content: center;
+    align-items: center;
 
 `;
 
+const FooterList = styled.ul`
+    color: white;
+    list-style: none;
+`
+
+const FooterListItem = styled.li`
+    color: white;
+    text-decoration: none;
+    display:inline;
+    margin-right: 8rem;
+`;
+
+const FooterLink = styled.a`
+    color: white;
+`;  
 
 export default Footer
 
