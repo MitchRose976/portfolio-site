@@ -7,6 +7,12 @@ import About from "./components/about/About";
 import styled from "styled-components";
 import AboutBackground from './components/about/coding.jpeg';
 import './App.css';
+import Carousel from "./components/carousel/Carousel";
+import Carousel2 from "./components/carousel/Carousel2";
+import {SliderData} from './components/carousel/SliderData';
+import ImageCardFront from "./components/carousel/ImageCardFront";
+import ImageCardBack from "./components/carousel/ImageCardBack";
+import Footer from "./components/Footer/footer";
 
 function App() {
   return (
@@ -32,16 +38,17 @@ function App() {
         <About/>
       </Container>
       {/* Projects */}
-      <Container area="Projects">
-        Projects
+      <Container area="Projects" className="carousel">
+        {/* <Carousel slides={SliderData}/> */}
+        <ImageCardFront/>
       </Container>
       {/* Contact */}
       <Container area='Contact'>
-        Contact
+        Contact (test Change)
       </Container>
       {/* Footer */}
       <Container area='Footer'>
-        Footer
+        <Footer/>
       </Container>
     </GridWrapper>
   );
