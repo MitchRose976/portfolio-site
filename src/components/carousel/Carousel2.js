@@ -5,7 +5,7 @@ import ImageCardFront from "./ImageCardFront";
 // import Container from "../Container";
 // import ProjectTitle from "./ProjectTitle";
 // import ProjectDescription from "./ProjectDescription";
-import Wrapper from "./Wrapper";
+//import Wrapper from "./Wrapper";
 import Container from "../Container";
 // import InfoButton from "./InfoButton";
 // import Pic from "../../images/pic1.jpg";
