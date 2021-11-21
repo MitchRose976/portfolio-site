@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import ImageCardFront from "./ImageCardFront"
 import ImageCardBack from "./ImageCardBack"
 
-// const ImageCard = () = {
-//     return (
-//         <Container>
-//         {flip ? (<ImageCardFront/>) : (<ImageCardBack/>)}
-//         </Container>
-//     );
-// }
+function ImageCard() {
+    const [flip, setFlip] = useState(false);
+    return (
+        <div>
+            {flip ? <ImageCardFront/> : <ImageCardBack/>}
+        </div>
+    )
+}
+
+export default ImageCard

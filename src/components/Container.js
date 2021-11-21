@@ -8,7 +8,11 @@ export const Container = styled.div`
   margin: ${(props) => props.marginTop};
   padding: ${(props) => props.padding};
   padding-top: ${(props) => props.paddingTop};
+<<<<<<< HEAD
   classname: ${(props) => props.className};
+=======
+  className: ${(props) => props.className};
+>>>>>>> main
   height: ${(props) => props.height};
   width: ${(props) => props.width};
   position: ${(props) => props.position};

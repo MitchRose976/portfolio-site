@@ -7,11 +7,11 @@ import About from "./components/about/About";
 import styled from "styled-components";
 import AboutBackground from './components/about/coding.jpeg';
 import './App.css';
-import Carousel from "./components/carousel/Carousel";
-import Carousel2 from "./components/carousel/Carousel2";
-import {SliderData} from './components/carousel/SliderData';
+//import Carousel from "./components/carousel/Carousel";
+//import Carousel2 from "./components/carousel/Carousel2";
+//import {SliderData} from './components/carousel/SliderData';
 import ImageCardFront from "./components/carousel/ImageCardFront";
-import ImageCardBack from "./components/carousel/ImageCardBack";
+//import ImageCardBack from "./components/carousel/ImageCardBack";
 import Footer from "./components/Footer/footer";
 
 function App() {
