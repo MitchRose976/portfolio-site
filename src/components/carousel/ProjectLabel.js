@@ -17,12 +17,15 @@ const ProjectLabel = styled.div`
   flex-flow: column;
   background-color: white;
   color: black;
+  text-align: center;
   border-radius: ${(props) => props.borderRadius};
   border-top-left-radius: ${(props) => props.borderTopLeftRadius};
   border-top-right-radius: ${(props) => props.borderTopRightRadius};
   border-bottom-left-radius: ${(props) => props.borderBottomLeftRadius};
   border-bottom-right-radius: ${(props) => props.borderBottomRightRadius};
   backface-visibility: hidden;
+  overflow: ${(props) => props.overflow};
+  text-overflow: ${(props) => props.textOverflow};
   @media (max-width: 1024px) {
     line-height: 2;
   }

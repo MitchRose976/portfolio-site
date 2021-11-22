@@ -5,17 +5,6 @@ import ProjectLabel from "./ProjectLabel";
 import ProjectTitle from "./ProjectTitle";
 import ProjectDescription from "./ProjectDescription";
 //import Wrapper from "./Wrapper";
-<<<<<<< HEAD
-import InfoButton from "./InfoButton";
-import Pic from "../../images/pic1.jpg";
-import { FaArrowRight } from "react-icons/fa";
-import Wrapper from "./Wrapper";
-
-const ImageCardFront = () => {
-  return (
-    //   onclick ={() => setFlip(!flip)};
-    <Wrapper>
-=======
 //import InfoButton from "./InfoButton";
 import Pic from "../../images/pic1.jpg";
 import { FaArrowRight, FaLeaf } from "react-icons/fa";
@@ -30,7 +19,7 @@ import '../../App.css'
 // The flip state must be passed to the component that conditionally renders it
 // The flip animation must be done through a class that I can add to each component but I do not want the animation to start onload or when the carousel is changed. Only upon the first change of state.
 
-const ImageCardFront = () => {
+const ProjectCardFront = () => {
 
   const [flip, setFlip] = useState(false);
 
@@ -47,7 +36,6 @@ const ImageCardFront = () => {
 
   return (
     <Wrapper className={`cardFront ${flip ? 'flipFront' : ''}`}>
->>>>>>> main
       {/* Front Side */}
       <Container
         height="70%"
@@ -61,10 +49,7 @@ const ImageCardFront = () => {
         padding="1px"
         backgroundColor="white"
         backfaceVisibility="hidden"
-<<<<<<< HEAD
-=======
         
->>>>>>> main
       >
         <ProjectImage src={Pic} />
       </Container>
@@ -81,23 +66,15 @@ const ImageCardFront = () => {
         borderBottomRightRadius="20px"
       >
         <ProjectTitle>Project 1</ProjectTitle>
-        <ProjectDescription>
+        <ProjectDescription className="frontText">
           This is a project about my favourite tabletop strategy game
         </ProjectDescription>
-<<<<<<< HEAD
-        <InfoButton >
-=======
-        <button className="flipButton " onClick={() => setFlip(!flip)}>
->>>>>>> main
+        <button className="flipButton" onClick={() => setFlip(!flip)}>
           More Info{" "}
           <FaArrowRight
             style={{ backgroundColor: "rgba(66, 16, 106, 0.01)" }}
           />
-<<<<<<< HEAD
-        </InfoButton>
-=======
         </button>
->>>>>>> main
       </ProjectLabel>
     </Wrapper>
   );
@@ -111,4 +88,4 @@ const ProjectImage = styled.img`
   z-index: 10;
 `;
 
-export default ImageCardFront;
+export default ProjectCardFront;

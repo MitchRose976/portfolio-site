@@ -10,7 +10,8 @@ import './App.css';
 //import Carousel from "./components/carousel/Carousel";
 //import Carousel2 from "./components/carousel/Carousel2";
 //import {SliderData} from './components/carousel/SliderData';
-import ImageCardFront from "./components/carousel/ImageCardFront";
+import ProjectCardFront from "./components/carousel/ProjectCardFront";
+import ProjectCardBack from "./components/carousel/ProjectCardBack";
 //import ImageCardBack from "./components/carousel/ImageCardBack";
 import Footer from "./components/Footer/footer";
 
@@ -40,7 +41,8 @@ function App() {
       {/* Projects */}
       <Container area="Projects" className="carousel">
         {/* <Carousel slides={SliderData}/> */}
-        <ImageCardFront/>
+        <ProjectCardBack/>
+        {/* <ProjectCardFront/> */}
       </Container>
       {/* Contact */}
       <Container area='Contact'>

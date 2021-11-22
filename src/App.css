@@ -59,6 +59,11 @@
   transform-style: preserve-3d;
   transition: 150ms;
   transform: perspective(1000px) rotateY(var(--rotate-y, 0));
+  border-radius: 20px;
+}
+
+.frontText {
+  color: black;
 }
 
 .flipFront {
@@ -75,6 +80,7 @@
   color: white;
   font-size: 1rem;
   border-radius: 20px;
+  margin-top: 0.5rem;
   cursor: pointer;
   transition-property: background, width, box-shadow, letter-spacing;
   transition-duration: 100ms;
@@ -98,6 +104,10 @@
   .headshot-container {
     padding: 3rem 0 0 0;
   }
+
+  .flipButton {
+    margin-top: 0.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -118,8 +128,20 @@
   }
 }
 
+@media (max-width: 590px) {
+  .frontText {
+    display: none;
+    margin-top: 2rem;
+  }
+}
+
 @media (max-width: 500px) {
     .headshot-container {
       padding: 3rem 0 0 0;
+    }
+    
+    .frontText {
+      display: none;
+      margin-top: 2rem;
     }
   }

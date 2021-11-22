@@ -12,6 +12,13 @@ const InfoButton = styled.button`
   cursor: pointer;
   transition-property: background, width, box-shadow, letter-spacing;
   transition-duration: 100ms;
+  display: ${(props) => props.display};
+  position: ${(props) => props.position};
+  left: ${(props) => props.left};
+  right: ${(props) => props.right};
+  bottom: ${(props) => props.bottom};
+  text-align: ${(props) => props.textAlign};
+  margin: ${(props) => props.margin};
   &:hover {
     background: rgba(66, 16, 106, 1);
     width: 11rem;
