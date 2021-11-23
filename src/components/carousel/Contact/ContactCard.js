@@ -3,6 +3,7 @@ import Container from "../../Container";
 import Wrapper from "../Wrapper";
 import styled from "styled-components";
 import { FcBusinessContact } from "react-icons/fc";
+import '../../../App.css';
 
 function ContactCard() {
   return (
@@ -19,8 +20,10 @@ function ContactCard() {
         padding="1px"
         backgroundColor="white"
         backfaceVisibility="hidden"
+        flexDirection="column"
       >
-
+        <FcBusinessContact size={80} className={"contact-image"}/>
+        <ContactLabel>Contact Me</ContactLabel>
       </Container>
     </Wrapper>
   );
@@ -33,5 +36,14 @@ const ContactImage = styled.img`
     object-fit: cover;
     z-index: 10;
 `
+
+const ContactLabel = styled.h1`
+    font-size: 2rem;
+    text-align: center;
+    
+    display: flex;
+`
+
+
 
 export default ContactCard;

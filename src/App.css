@@ -1,3 +1,4 @@
+/* Styles the Container of the headshot image */
 .headshot-container {
   margin: 0 auto;
   padding: 3rem 4rem 0 4rem;
@@ -39,6 +40,8 @@
   user-select: none;
 }
 
+/* Adds button fill animation onHover of "Lets Chat" button */
+
 .slide {
   opacity: 0;
   transition-duration: 1s ease;
@@ -50,10 +53,12 @@
   transform: scale(1.08);
 }
 
+/* Styles the Social Media Icons */
 .media-icons {
   font-size: 1.8rem;
 }
 
+/* Styles UI Project card front */
 .cardFront {
   backface-visibility: hidden;
   transform-style: preserve-3d;
@@ -66,12 +71,14 @@
   color: black;
 }
 
+/* Adds flip animation onClick of "More Info ->" */
 .flipFront {
   transform: rotateY(180deg);
   /* Variable to apply transformation on card when flipped */
   --rotate-y: 180deg;
 }
 
+/* Styles Purple Button with "More Info ->" */
 .flipButton {
   width: 10rem;
   height: 2rem;
@@ -94,6 +101,17 @@
   letter-spacing: 1.5px;
 }
 
+/* Styles the Contact Icon in Contact Section */
+.contact-image {
+  background-color: white;
+  margin-top: 5rem;
+  width: 7rem;
+  height: 7rem;
+
+}
+
+
+/* Responsive Design */
 @media (max-width: 1500px) {
     .headshot-container {
       padding: 3rem 1rem 0 1rem;
