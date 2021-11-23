@@ -30,11 +30,11 @@ const InfoButton = styled.button`
     height: 1.8rem;
     font-size: 0.9rem;
     &:hover {
-        width: 9rem;
-        letter-spacing: 1.3px;
-        box-shadow: 0.4rem 0.4rem 0.8rem black;
+      width: 9rem;
+      letter-spacing: 1.3px;
+      box-shadow: 0.4rem 0.4rem 0.8rem black;
     }
   }
 `;
 
-export default InfoButton
+export default InfoButton;

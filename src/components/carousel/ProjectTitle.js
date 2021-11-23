@@ -18,4 +18,4 @@ const ProjectTitle = styled.h2`
   }
 `;
 
-export default ProjectTitle
+export default ProjectTitle;

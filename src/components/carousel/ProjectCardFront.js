@@ -67,7 +67,7 @@ const ProjectCardFront = () => {
       >
         <ProjectTitle>Project 1</ProjectTitle>
         <ProjectDescription className="frontText">
-          This is a project about my favourite tabletop strategy game
+          This is an example
         </ProjectDescription>
         <button className="flipButton" onClick={() => setFlip(!flip)}>
           More Info{" "}
