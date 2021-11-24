@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 // import styled from "styled-components";
-import Container from "../Container";
-import Wrapper from "./Wrapper";
-import ProjectTitle from "./ProjectTitle";
+//import Container from "../Container";
+import Wrapper from "../UI/Wrapper";
+//import ProjectTitle from "./ProjectTitle";
 import ProjectDescription from "./ProjectDescription";
 import InfoButton from "./InfoButton";
 
@@ -14,7 +14,13 @@ const ImageCardBack = () => {
   const [flip, setFlip] = useState(false);
 
   return (
-    <Wrapper display="flex" alignItems="center" justifyContent="center">
+    <Wrapper
+      display="flex"
+      alignItems="center"
+      justifyContent="center"
+      height="80%"
+      width="50%"
+    >
       {/* Back Side */}
       <ProjectLabel
         display="inline-block"

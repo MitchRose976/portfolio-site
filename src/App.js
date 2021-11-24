@@ -13,8 +13,9 @@ import './App.css';
 import ProjectCardFront from "./components/carousel/ProjectCardFront";
 import ProjectCardBack from "./components/carousel/ProjectCardBack";
 //import ImageCardBack from "./components/carousel/ImageCardBack";
-import ContactCard from "./components/carousel/Contact/ContactCard";
+import ContactCard from "./components/Contact/ContactCard";
 import Footer from "./components/Footer/footer";
+import ContactBanner from "./components/Contact/ContactBanner";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
       </Container>
       {/* Contact */}
       <Container area='Contact'>
+        {/* <ContactBanner/> */}
         <ContactCard/>
       </Container>
       {/* Footer */}

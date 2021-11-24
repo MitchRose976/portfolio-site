@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  height: 80%;
-  width: 50%;
+  height: ${(props) => props.height};
+  width: ${(props) => props.width};
   display: ${(props) => props.display};
   align-items: ${(props) => props.alignItems};
   justify-content: ${(props) => props.justifyContent};

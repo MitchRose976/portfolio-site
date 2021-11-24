@@ -8,8 +8,8 @@ import ProjectDescription from "./ProjectDescription";
 //import InfoButton from "./InfoButton";
 import Pic from "../../images/pic1.jpg";
 import { FaArrowRight, FaLeaf } from "react-icons/fa";
-import Wrapper from "./Wrapper";
-import '../../App.css'
+import Wrapper from "../UI/Wrapper";
+import "../../App.css";
 
 // I have a UI card with 2 sides
 // I want to keep the first side displayed until the user clicks the button
@@ -20,7 +20,6 @@ import '../../App.css'
 // The flip animation must be done through a class that I can add to each component but I do not want the animation to start onload or when the carousel is changed. Only upon the first change of state.
 
 const ProjectCardFront = () => {
-
   const [flip, setFlip] = useState(false);
 
   // const flipFront = () => {
@@ -32,10 +31,12 @@ const ProjectCardFront = () => {
   //   }
   // }
 
-  
-
   return (
-    <Wrapper className={`cardFront ${flip ? 'flipFront' : ''}`}>
+    <Wrapper
+      className={`cardFront ${flip ? "flipFront" : ""}`}
+      height="80%"
+      width="50%"
+    >
       {/* Front Side */}
       <Container
         height="70%"
@@ -49,7 +50,6 @@ const ProjectCardFront = () => {
         padding="1px"
         backgroundColor="white"
         backfaceVisibility="hidden"
-        
       >
         <ProjectImage src={Pic} />
       </Container>
