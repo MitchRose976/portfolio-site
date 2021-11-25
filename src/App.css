@@ -118,17 +118,34 @@
 }
 
 /* Styles the Input boxes in the Contact Form */
-.email-form {
+.email-address {
   width: 50%;
   height: 2rem;
   background-color: rgba(132, 153, 177, 0.2);
   cursor: pointer;
   border: 0.5px solid black;
+  margin-top: 0.8rem;
 }
 
-.email-form::placeholder {
+.email-address::placeholder {
   color: black;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.email-body {
+  width: 50%;
+  height: 14rem;
+  cursor: pointer;
+  text-align: left;
+  margin-top: 2rem;
+  background-color: rgba(132, 153, 177, 0.2);
+  border: 0.5px solid black;
+}
+
+.email-body::placeholder {
+  color: black;
+  font-size: 1rem;
   padding-left: 1rem;
 }
 

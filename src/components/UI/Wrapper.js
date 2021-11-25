@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   align-items: ${(props) => props.alignItems};
   justify-content: ${(props) => props.justifyContent};
   position: relative;
-  flex-direction:  ${(props) => props.flexDirection};
+  flex-direction: ${(props) => props.flexDirection};
   border-radius: 20px;
   background-color: white;
   box-shadow: 1rem 1rem 1rem black;
@@ -21,4 +21,4 @@ const Wrapper = styled.div`
   }
 `;
 
-export default Wrapper
+export default Wrapper;

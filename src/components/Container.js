@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  ${'' /* border: 1px solid white;  */}
+  ${"" /* border: 1px solid white;  */}
   color: white;
   grid-area: ${(props) => props.area};
   margin: ${(props) => props.margin};
   margin: ${(props) => props.marginTop};
   padding: ${(props) => props.padding};
   padding-top: ${(props) => props.paddingTop};
-  className: ${(props) => props.className};
+  classname: ${(props) => props.className};
   height: ${(props) => props.height};
   width: ${(props) => props.width};
   position: ${(props) => props.position};
@@ -24,7 +24,7 @@ export const Container = styled.div`
   right: ${(props) => props.right};
   left: ${(props) => props.left};
   border-top: ${(props) => props.borderTop};
-  
+
   @media (max-width: 1024px) {
     text-align: center;
   }

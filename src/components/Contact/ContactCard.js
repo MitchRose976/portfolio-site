@@ -7,7 +7,7 @@ import "../../App.css";
 
 function ContactCard() {
   return (
-    <Wrapper height="80%" width="50%">
+    <Wrapper height="40rem" width="50%">
       <Container
         height="70%"
         width="99%"
@@ -28,7 +28,24 @@ function ContactCard() {
           Feel free to contact me if you are need a new website built or if your
           team needs a new Front-End Developer!
         </ContactText>
-        <input type="email" className="email-form" placeholder="Email:"></input>
+        <input
+          type="email"
+          className="email-address"
+          placeholder="Email:"
+        ></input>
+        <textarea
+          className="email-body"
+          placeholder="Say hello..."
+          name="comment[body]"
+          rows="1"
+          cols="60"
+          wrap="physical"
+          id="comment_text_area"
+        ></textarea>
+        {/* Contact Image  */}
+        <Container>
+
+        </Container>
       </Container>
     </Wrapper>
   );
@@ -47,9 +64,9 @@ const ContactText = styled.p`
   display: block;
   color: black;
   background-color: white;
-  margin: 0rem 1rem 0rem 1rem;
+  margin: 0rem 5rem 0rem 5rem;
   line-height: 2;
+  text-align: center;
 `;
-
 
 export default ContactCard;
