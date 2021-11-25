@@ -16,6 +16,7 @@ import ProjectCardBack from "./components/carousel/ProjectCardBack";
 import ContactCard from "./components/Contact/ContactCard";
 import Footer from "./components/Footer/footer";
 import ContactBanner from "./components/Contact/ContactBanner";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -49,7 +50,7 @@ function App() {
       {/* Contact */}
       <Container area='Contact'>
         {/* <ContactBanner/> */}
-        <ContactCard/>
+        <Contact/>
       </Container>
       {/* Footer */}
       <Container area='Footer'>

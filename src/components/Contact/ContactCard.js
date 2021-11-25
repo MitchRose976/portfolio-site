@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { FcBusinessContact } from "react-icons/fc";
 import "../../App.css";
 
+
 function ContactCard() {
   return (
     <Wrapper height="40rem" width="50%">
@@ -43,9 +44,6 @@ function ContactCard() {
           id="comment_text_area"
         ></textarea>
         {/* Contact Image  */}
-        <Container>
-
-        </Container>
       </Container>
     </Wrapper>
   );

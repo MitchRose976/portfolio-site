@@ -13,6 +13,7 @@ export const Container = styled.div`
   width: ${(props) => props.width};
   position: ${(props) => props.position};
   border-radius: ${(props) => props.borderRadius};
+  border: ${(props) => props.border};
   background-color: ${(props) => props.backgroundColor};
   display: ${(props) => props.display};
   justify-content: ${(props) => props.justifyContent};

@@ -149,6 +149,13 @@
   padding-left: 1rem;
 }
 
+/* Contact Image */
+.contact-picture {
+  width: 100%;
+  height: 100%;
+  background-image: #262322;
+}
+
 /* Responsive Design */
 @media (max-width: 1500px) {
   .headshot-container {
