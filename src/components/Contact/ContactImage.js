@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from '../Container'
 import ContactPic from '../../images/Contact.png';
+import ContactPic2 from '../../images/Contact-2.png';
 import "../../App.css";
 
 function ContactImage() {
@@ -11,7 +12,7 @@ function ContactImage() {
         margin="0 0 0 1rem"
         border="1px solid red"
         >
-        <img src={ContactPic} className="contact-picture"/>
+        <img src={ContactPic2} className="contact-picture"/>
         </Container>
     )
 }
