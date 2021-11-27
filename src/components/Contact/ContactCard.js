@@ -5,44 +5,48 @@ import styled from "styled-components";
 import { FcBusinessContact } from "react-icons/fc";
 import "../../App.css";
 
-
 function ContactCard() {
   return (
-    <Wrapper height="40rem" width="50%">
+    <Wrapper height="40rem" width="50%" className="contact-card">
       <Container
-        height="70%"
-        width="99%"
+        // height="70%"
+        // width="99%"
         borderRadius="20px"
         position="relative"
         display="flex"
         justifyContent="center"
-        alignItems="center"
+        alignItems="flex-start"
         overflow="hidden"
         padding="1px"
         backgroundColor="white"
         backfaceVisibility="hidden"
         flexDirection="column"
+        padding="1rem 1rem 1rem 2rem"
       >
-        <ContactLabel>Contact Me</ContactLabel>
-        <FcBusinessContact className={"contact-image"} />
-        <ContactText>
-          Feel free to contact me if you are need a new website built or if your
-          team needs a new Front-End Developer!
-        </ContactText>
-        <input
-          type="email"
-          className="email-address"
-          placeholder="Email:"
-        ></input>
+        <ContactLabel>
+          Send Me A Message
+          <FcBusinessContact className={"contact-icon"} />
+        </ContactLabel>
+        <label className="form-label">
+          <span>Name</span>
+        </label>
+        <input type="text" className="form-input"></input>
+        <label className="form-label">
+          <span>Email</span>
+        </label>
+        <input type="email" className="form-input"></input>
+        <label className="form-label">
+          <span>Message</span>
+        </label>
         <textarea
           className="email-body"
-          placeholder="Say hello..."
           name="comment[body]"
           rows="1"
           cols="60"
           wrap="physical"
           id="comment_text_area"
         ></textarea>
+        <SubmitButton>Submit</SubmitButton>
         {/* Contact Image  */}
       </Container>
     </Wrapper>
@@ -57,14 +61,29 @@ const ContactLabel = styled.h1`
   display: flex;
 `;
 
-const ContactText = styled.p`
-  font-size: 1.1rem;
-  display: block;
-  color: black;
-  background-color: white;
-  margin: 0rem 5rem 0rem 5rem;
-  line-height: 2;
-  text-align: center;
+const SubmitButton = styled.button`
+  width: 7rem;
+  height: 2rem;
+  background-color: var(--aqua);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 rgba(72, 220, 202, 1), 0 0 0 0 rgba(66, 16, 106, 1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  $:after {
+    content: "";
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background-color: var(--purple);
+    background-image: linear-gradient(225deg, var(--aqua) 0%, var(--pink) 50%, var(--purple) 100%);
+    z-index: -1;
+    transition: transform 0.5 ease;
+  }
 `;
 
 export default ContactCard;

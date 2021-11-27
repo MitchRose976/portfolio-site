@@ -11,6 +11,7 @@ function ContactImage() {
         width="40rem"
         margin="0 0 0 1rem"
         border="1px solid red"
+        className="contact-pic-container"
         >
         <img src={ContactPic2} className="contact-picture"/>
         </Container>

@@ -20,6 +20,7 @@ const ImageCardBack = () => {
       justifyContent="center"
       height="80%"
       width="50%"
+      className={`cardBack ${flip ? "flipBack" : ""}`}
     >
       {/* Back Side */}
       <ProjectLabel

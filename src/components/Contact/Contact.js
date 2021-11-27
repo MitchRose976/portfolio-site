@@ -8,17 +8,15 @@ import ContactImage from './ContactImage'
 function Contact() {
     return (
         <Container
-        display="100%"
-        width="100%"
         display="flex"
         flexDirection="row"
         justifyContent="center"
         alignItems="center"
-        border="1px solid white"
-
+        className="contact"
+        width="100%"
         >
             <ContactCard/>
-            <ContactImage/>
+            {/* <ContactImage/> */}
         </Container>
     )
 }
