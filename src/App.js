@@ -13,7 +13,7 @@ import './App.css';
 import ProjectCardFront from "./components/carousel/ProjectCardFront";
 import ProjectCardBack from "./components/carousel/ProjectCardBack";
 //import ImageCardBack from "./components/carousel/ImageCardBack";
-import ContactCard from "./components/Contact/ContactCard";
+import ContactCard from "./components/Contact/ContactForm";
 import Footer from "./components/Footer/footer";
 import ContactBanner from "./components/Contact/ContactBanner";
 import Contact from "./components/Contact/Contact";

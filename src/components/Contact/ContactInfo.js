@@ -1,53 +1,37 @@
 import React from "react";
 import Container from "../Container";
 import Wrapper from "../UI/Wrapper";
+import ContactList from "./ContactList";
 import styled from "styled-components";
 import { FcBusinessContact } from "react-icons/fc";
 import "../../App.css";
 
-function ContactCard() {
+function ContactInfo() {
   return (
     <Wrapper height="40rem" width="50%" className="contact-card">
       <Container
         // height="70%"
         // width="99%"
-        borderRadius="20px"
+        borderTopRightRadius="2rem"
+        borderBottomRightRadius="2rem"
         position="relative"
         display="flex"
         justifyContent="center"
         alignItems="flex-start"
         overflow="hidden"
-        padding="1px"
         backgroundColor="white"
         backfaceVisibility="hidden"
         flexDirection="column"
         padding="1rem 1rem 1rem 2rem"
       >
         <ContactLabel>
-          Send Me A Message
+          Contact Me
           <FcBusinessContact className={"contact-icon"} />
         </ContactLabel>
-        <label className="form-label">
-          <span>Name</span>
-        </label>
-        <input type="text" className="form-input"></input>
-        <label className="form-label">
-          <span>Email</span>
-        </label>
-        <input type="email" className="form-input"></input>
-        <label className="form-label">
-          <span>Message</span>
-        </label>
-        <textarea
-          className="email-body"
-          name="comment[body]"
-          rows="1"
-          cols="60"
-          wrap="physical"
-          id="comment_text_area"
-        ></textarea>
-        <SubmitButton>Submit</SubmitButton>
-        {/* Contact Image  */}
+        <ContactText>Contact me below if you want to chat!</ContactText>
+        <ContactList/>
+        
+        
       </Container>
     </Wrapper>
   );
@@ -60,6 +44,15 @@ const ContactLabel = styled.h1`
   background-color: white;
   display: flex;
 `;
+
+const ContactText = styled.h2`
+    font-size: 1rem;
+    opacity: 0.6;
+    color: black;
+    background-color: white;
+    display: flex;
+`
+
 
 const SubmitButton = styled.button`
   width: 7rem;
@@ -86,4 +79,4 @@ const SubmitButton = styled.button`
   }
 `;
 
-export default ContactCard;
+export default ContactInfo;

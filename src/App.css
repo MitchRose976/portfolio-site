@@ -185,6 +185,13 @@
   background-image: #262322;
 }
 
+/* Styles Icons in the Contact List */
+.contact-list-icon {
+  background-color: white;
+  width: 2rem;
+  height: 2rem;
+}
+
 /* Responsive Design */
 @media (max-width: 1500px) {
   .headshot-container {

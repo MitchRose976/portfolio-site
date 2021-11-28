@@ -1,8 +1,9 @@
 import React from 'react'
+import { GrContactInfo } from 'react-icons/gr'
 import Container from '../Container'
 import Wrapper from '../UI/Wrapper'
-import ContactCard from './ContactCard'
-import ContactImage from './ContactImage'
+import ContactForm from './ContactForm'
+import ContactInfo from './ContactInfo'
 
 
 function Contact() {
@@ -13,10 +14,10 @@ function Contact() {
         justifyContent="center"
         alignItems="center"
         className="contact"
-        width="100%"
+        width="90%"
         >
-            <ContactCard/>
-            {/* <ContactImage/> */}
+            <ContactForm/>
+            <ContactInfo/>
         </Container>
     )
 }
