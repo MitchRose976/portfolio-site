@@ -4,6 +4,7 @@ import Wrapper from "../UI/Wrapper";
 import ContactList from "./ContactList";
 import styled from "styled-components";
 import { FcBusinessContact } from "react-icons/fc";
+import ContactImage from "./ContactImage"
 import "../../App.css";
 
 function ContactInfo() {
@@ -30,8 +31,7 @@ function ContactInfo() {
         </ContactLabel>
         <ContactText>Contact me below if you want to chat!</ContactText>
         <ContactList/>
-        
-        
+        <ContactImage/>  
       </Container>
     </Wrapper>
   );

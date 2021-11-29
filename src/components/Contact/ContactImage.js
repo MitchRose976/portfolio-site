@@ -7,13 +7,12 @@ import "../../App.css";
 function ContactImage() {
     return (
         <Container
-        height="40rem"
-        width="40rem"
+        height="11rem"
+        width="11rem"
         margin="0 0 0 1rem"
-        border="1px solid red"
         className="contact-pic-container"
         >
-        <img src={ContactPic2} className="contact-picture"/>
+        <img src={ContactPic} className="contact-picture"/>
         </Container>
     )
 }

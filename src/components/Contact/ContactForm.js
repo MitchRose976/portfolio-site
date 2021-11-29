@@ -17,7 +17,7 @@ function ContactCard() {
         justifyContent="center"
         alignItems="flex-start"
         overflow="hidden"
-        backgroundColor="white"
+        backgroundColor="var(--purple)"
         backfaceVisibility="hidden"
         flexDirection="column"
         padding="1rem 1rem 1rem 2rem"
@@ -54,8 +54,9 @@ function ContactCard() {
 const ContactLabel = styled.h1`
   font-size: 2rem;
   text-align: center;
-  color: black;
-  background-color: white;
+  color: white;
+  font-weight: 100;
+  background-color: var(--purple);
   display: flex;
 `;
 

@@ -8,16 +8,25 @@ function ContactList() {
   return (
     <List>
       <ListItem>
-        <IoLocationSharp className="contact-list-icon" /> 
-        <ListItemLabel>Location: Mississauga, Ontario, Canada, L5C3B2 </ListItemLabel>
+        <IoLocationSharp className="contact-list-icon" />
+        <ListItemLabel>
+          Location:{" "}
+          <ListItemLabelText>
+            Mississauga, Ontario, Canada, L5C3B2
+          </ListItemLabelText>
+        </ListItemLabel>
       </ListItem>
       <ListItem>
         <BsFillPhoneVibrateFill className="contact-list-icon" />
-        <ListItemLabel>Phone: 416-779-2166</ListItemLabel>
+        <ListItemLabel>
+          Phone: <ListItemLabelText>416-779-2166</ListItemLabelText>
+        </ListItemLabel>
       </ListItem>
       <ListItem>
         <MdEmail className="contact-list-icon" />
-        <ListItemLabel>Email: mitch.j.rose@outlook.com</ListItemLabel>
+        <ListItemLabel>
+          Email: <ListItemLabelText>mitch.j.rose@outlook.com</ListItemLabelText>
+        </ListItemLabel>
       </ListItem>
     </List>
   );
@@ -46,6 +55,13 @@ const ListItemLabel = styled.span`
   font-size: 1rem;
   background-color: white;
   margin-left: 1.4rem;
+`;
+
+const ListItemLabelText = styled.span`
+  color: black;
+  font-size: 1rem;
+  background-color: white;
+  opacity: 0.7;
 `;
 
 export default ContactList;
