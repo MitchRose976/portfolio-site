@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   position: relative;
   flex-direction: ${(props) => props.flexDirection};
   border-radius: 20px;
-  background-color: white;
+  background-color: ${(props) => props.backgroundColor};
   box-shadow: 1rem 1rem 1rem black;
   @media only screen and (max-width: 1300px) {
     height: 85%;

@@ -133,7 +133,17 @@
   width: "100%";
 }
 
-/* Styles the Contact Card */
+
+/* CONTACT FORM/CARD */
+
+/* Styles the Purple half of the Contact Form */
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 2rem 0 0 2rem;
+  flex-direction: column;
+}
 
 /* Styles the Contact Icon in Contact Section */
 .contact-icon {
@@ -180,7 +190,21 @@
   border-bottom: 1.5px solid white;
 }
 
-/* Contact Image */
+/* Contact Info */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 0 2rem 2rem 0;
+}
+
+/* Styles the Container that holds the Contact animation (The guy with the headset on) */
+.contact-pic-container {
+  height: 11rem;
+  width: 11rem;
+}
+
+/* Styles the Contact Animation Picture (The guy with the headset on) */
 .contact-picture {
   object-fit: fill;
   width: 100%;
@@ -188,14 +212,18 @@
   background-color: white;
 }
 
-/* Styles Icons in the Contact List */
+/* Styles Icons in the Contact List (White half of the Contact form) */
 .contact-list-icon {
   background-color: white;
   width: 2rem;
   height: 2rem;
 }
 
-/* Responsive Design */
+
+
+
+/* RESPONSIVE DESIGN */
+
 @media (max-width: 1500px) {
   .headshot-container {
     padding: 3rem 1rem 0 1rem;
@@ -211,9 +239,7 @@
     margin-top: 0.5rem;
   }
 
-  .contact-pic-container {
-    display: none;
-  }
+  
 }
 
 @media (max-width: 768px) {
@@ -236,9 +262,11 @@
   .contact {
     width: 100%;
     height: 90%;
+    flex-direction: row;
   }
 
   .contact-card {
+    background-color: var(--purple) !important;
     height: 90% !important;
     width: 100%;
   }
@@ -259,5 +287,39 @@
   .frontText {
     display: none;
     margin-top: 2rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    width: 100% !important;
+  }
+
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 2rem 2rem 0 0;
+    flex-direction: column;
+    padding: 1rem !important;
+  }
+
+  .form-input {
+    width: 80%;
+  }
+
+  .email-body {
+    width: 80%;
+  }
+
+  .contact-info {
+    border-radius: 0 0 2rem 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    align-items: center;
+    padding: 1rem !important;
+  }
+
+  .contact-pic-container {
+    text-align: center;
   }
 }

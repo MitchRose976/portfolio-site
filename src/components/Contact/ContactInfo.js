@@ -4,7 +4,7 @@ import Wrapper from "../UI/Wrapper";
 import ContactList from "./ContactList";
 import styled from "styled-components";
 import { FcBusinessContact } from "react-icons/fc";
-import ContactImage from "./ContactImage"
+import ContactImage from "./ContactImage";
 import "../../App.css";
 
 function ContactInfo() {
@@ -13,25 +13,21 @@ function ContactInfo() {
       <Container
         // height="70%"
         // width="99%"
-        borderTopRightRadius="2rem"
-        borderBottomRightRadius="2rem"
         position="relative"
-        display="flex"
-        justifyContent="center"
-        alignItems="flex-start"
         overflow="hidden"
         backgroundColor="white"
         backfaceVisibility="hidden"
         flexDirection="column"
         padding="1rem 1rem 1rem 2rem"
+        className="contact-info"
       >
         <ContactLabel>
           Contact Me
           <FcBusinessContact className={"contact-icon"} />
         </ContactLabel>
         <ContactText>Contact me below if you want to chat!</ContactText>
-        <ContactList/>
-        <ContactImage/>  
+        <ContactList />
+        <ContactImage />
       </Container>
     </Wrapper>
   );
@@ -46,13 +42,12 @@ const ContactLabel = styled.h1`
 `;
 
 const ContactText = styled.h2`
-    font-size: 1rem;
-    opacity: 0.6;
-    color: black;
-    background-color: white;
-    display: flex;
-`
-
+  font-size: 1rem;
+  opacity: 0.6;
+  color: black;
+  background-color: white;
+  display: flex;
+`;
 
 const SubmitButton = styled.button`
   width: 7rem;
@@ -73,7 +68,12 @@ const SubmitButton = styled.button`
     top: -50px;
     left: -100px;
     background-color: var(--purple);
-    background-image: linear-gradient(225deg, var(--aqua) 0%, var(--pink) 50%, var(--purple) 100%);
+    background-image: linear-gradient(
+      225deg,
+      var(--aqua) 0%,
+      var(--pink) 50%,
+      var(--purple) 100%
+    );
     z-index: -1;
     transition: transform 0.5 ease;
   }

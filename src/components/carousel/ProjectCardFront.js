@@ -36,6 +36,7 @@ const ProjectCardFront = () => {
       className={`cardFront ${flip ? "flipFront" : ""}`}
       height="80%"
       width="50%"
+      backgroundColor="white"
     >
       {/* Front Side */}
       <Container

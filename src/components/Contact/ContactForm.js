@@ -6,21 +6,14 @@ import "../../App.css";
 
 function ContactCard() {
   return (
-    <Wrapper height="40rem" width="50%" className="contact-card">
+    <Wrapper className="contact-card">
       <Container
-        // height="70%"
-        // width="99%"
-        borderTopLeftRadius="2rem"
-        borderBottomLeftRadius="2rem"
         position="relative"
-        display="flex"
-        justifyContent="center"
-        alignItems="flex-start"
         overflow="hidden"
         backgroundColor="var(--purple)"
         backfaceVisibility="hidden"
-        flexDirection="column"
         padding="1rem 1rem 1rem 2rem"
+        className="contact-form"
       >
         <ContactLabel>
           Send Me A Message
