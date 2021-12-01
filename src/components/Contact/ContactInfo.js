@@ -37,6 +37,9 @@ const ContactLabel = styled.h1`
   color: black;
   background-color: white;
   display: flex;
+  @media only screen and (max-width: 280px) {
+    font-size: 1.7rem;
+  }
 `;
 
 const ContactText = styled.h2`

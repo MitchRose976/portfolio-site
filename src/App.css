@@ -137,6 +137,7 @@
   box-shadow: 1rem 1rem 1rem black !important;
   background-color: white !important;
   border-radius: 2rem !important;
+  width: 75% !important;
 }
 
 .contact-card-white, .contact-card-purple {
@@ -183,7 +184,7 @@
 }
 
 .form-input {
-  width: 50%;
+  width: 80%;
   height: 2rem;
   border: 0;
   outline: 0;
@@ -194,7 +195,7 @@
 }
 
 .email-body {
-  width: 50%;
+  width: 80%;
   height: 13rem;
   text-align: left;
   margin-top: 1rem;
@@ -351,4 +352,5 @@
     display: none;
     margin-top: 2rem;
   }
+
 }
