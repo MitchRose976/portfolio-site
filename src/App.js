@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/navbar/Navbar";
 import Container from "./components/Container";
 import WelcomeMessage from "./components/home/WelcomeMessage";
@@ -17,8 +17,10 @@ import ContactCard from "./components/Contact/ContactForm";
 import Footer from "./components/Footer/footer";
 import ContactBanner from "./components/Contact/ContactBanner";
 import Contact from "./components/Contact/Contact";
+import ProjectCard from "./components/carousel/ProjectCard";
 
 function App() {
+
   return (
     <GridWrapper>
       {/* Navbar */}
@@ -44,12 +46,12 @@ function App() {
       {/* Projects */}
       <Container area="Projects" className="carousel">
         {/* <Carousel slides={SliderData}/> */}
-        <ProjectCardBack/>
+        <ProjectCard/>
+        {/* <ProjectCardBack/> */}
         {/* <ProjectCardFront/> */}
       </Container>
       {/* Contact */}
       <Container area='Contact' display="flex" justifyContent="center" alignItems="center">
-        {/* <ContactBanner/> */}
         <Contact/>
       </Container>
       {/* Footer */}

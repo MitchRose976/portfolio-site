@@ -52,9 +52,12 @@ const ListItem = styled.li`
 
 const ListItemLabel = styled.span`
   color: black;
-  font-size: 1rem;
+  font-size: 1.3rem;
   background-color: white;
   margin-left: 1.4rem;
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+  }
 `;
 
 const ListItemLabelText = styled.span`

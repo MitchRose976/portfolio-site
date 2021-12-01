@@ -4,8 +4,6 @@ import Container from "../Container";
 import ProjectLabel from "./ProjectLabel";
 import ProjectTitle from "./ProjectTitle";
 import ProjectDescription from "./ProjectDescription";
-//import Wrapper from "./Wrapper";
-//import InfoButton from "./InfoButton";
 import Pic from "../../images/pic1.jpg";
 import { FaArrowRight, FaLeaf } from "react-icons/fa";
 import Wrapper from "../UI/Wrapper";
@@ -21,15 +19,6 @@ import "../../App.css";
 
 const ProjectCardFront = () => {
   const [flip, setFlip] = useState(false);
-
-  // const flipFront = () => {
-  //   setFlip(!flip);
-  //   if (flip) {
-  //     // flip to front if true
-  //   } else {
-  //     // flip to front if false
-  //   }
-  // }
 
   return (
     <Wrapper

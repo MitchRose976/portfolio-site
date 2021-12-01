@@ -3,16 +3,18 @@ import ProjectCardFront from "./ProjectCardFront"
 import ProjectCardBack from "./ProjectCardBack"
 import Wrapper from "../UI/Wrapper";
 
-function ImageCard() {
+function ProjectCard() {
+
+    const [flip, setFlip] = useState(false);
+
     return (
         <Wrapper
         height="80%"
-        widd
+        display="flex"
         >
-            <ProjectCardFront/>
-            <ProjectCardBack/>
+        {!flip ? <ProjectCardBack/> : <ProjectCardFront/>} 
         </Wrapper>    
     )
 }
 
-export default ImageCard
+export default ProjectCard;
