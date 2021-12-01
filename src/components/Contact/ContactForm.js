@@ -4,9 +4,9 @@ import Wrapper from "../UI/Wrapper";
 import styled from "styled-components";
 import "../../App.css";
 
-function ContactCard() {
+function ContactForm() {
   return (
-    <Wrapper className="contact-card">
+    <Wrapper className="contact-card-purple">
       <Container
         position="relative"
         overflow="hidden"
@@ -38,7 +38,6 @@ function ContactCard() {
           id="comment_text_area"
         ></textarea>
         <SubmitButton>Submit</SubmitButton>
-        {/* Contact Image  */}
       </Container>
     </Wrapper>
   );
@@ -78,4 +77,4 @@ const SubmitButton = styled.button`
   }
 `;
 
-export default ContactCard;
+export default ContactForm;

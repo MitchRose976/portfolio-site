@@ -48,7 +48,7 @@ function App() {
         {/* <ProjectCardFront/> */}
       </Container>
       {/* Contact */}
-      <Container area='Contact'>
+      <Container area='Contact' display="flex" justifyContent="center" alignItems="center">
         {/* <ContactBanner/> */}
         <Contact/>
       </Container>

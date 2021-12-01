@@ -15,7 +15,7 @@ function Contact() {
         className="contact"
         width="90%"
         className="contact"
-        margin="3rem 0 0 0"
+        margin="3rem 0 3rem 0"
         >
             <ContactForm/>
             <ContactInfo/>

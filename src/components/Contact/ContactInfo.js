@@ -9,10 +9,8 @@ import "../../App.css";
 
 function ContactInfo() {
   return (
-    <Wrapper height="40rem" width="50%" className="contact-card">
+    <Wrapper className="contact-card-white">
       <Container
-        // height="70%"
-        // width="99%"
         position="relative"
         overflow="hidden"
         backgroundColor="white"

@@ -22,6 +22,8 @@ const ImageCardBack = () => {
       width="50%"
       className={`cardBack ${flip ? "flipBack" : ""}`}
       backgroundColor="white"
+      borderRadius="20px"
+      boxShadow="1rem 1rem 1rem black"
     >
       {/* Back Side */}
       <ProjectLabel

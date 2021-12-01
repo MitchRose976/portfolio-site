@@ -37,6 +37,8 @@ const ProjectCardFront = () => {
       height="80%"
       width="50%"
       backgroundColor="white"
+      borderRadius="20px"
+      boxShadow="1rem 1rem 1rem black"
     >
       {/* Front Side */}
       <Container
