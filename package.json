@@ -16,8 +16,13 @@
     "react-scripts": "4.0.3"
   },
   "scripts": {
+<<<<<<< HEAD
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+=======
     "start": "react-scripts start",
     "build": "react-scripts build",
+>>>>>>> 0133d90972503863205805db5c0409ba8d784a20
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
