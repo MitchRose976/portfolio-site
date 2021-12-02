@@ -9,16 +9,19 @@ const Wrapper = styled.div`
   position: relative;
   flex-direction: ${(props) => props.flexDirection};
   border-radius: ${(props) => props.borderRadius};
+  border: ${(props) => props.border};
   background-color: ${(props) => props.backgroundColor};
   box-shadow: ${(props) => props.boxShadow};
-  @media only screen and (max-width: 1300px) {
+
+  /* Temporary comment to test new flip */
+  ${'' /* @media only screen and (max-width: 1300px) {
     height: 85%;
     width: 60%;
   }
   @media only screen and (max-width: 500px) {
     height: 95%;
     width: 75%;
-  }
+  } */}
 `;
 
 export default Wrapper;

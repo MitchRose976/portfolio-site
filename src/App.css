@@ -67,40 +67,56 @@
   font-size: 1.8rem;
 }
 
-/* Styles UI Project card front */
+/* Styles UI Project card front/back */
+
+.project-card {
+  height: 50%;
+  width: 80%;
+  border: 1px solid red;
+  perspective: 1000px;
+  position: relative;
+  transform-style: preserve-3d;
+  /* rotateY is based on a variable that is set to 180deg onClick */
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0));
+  transition: 150ms; 
+}
+
 .cardFront,
 .cardBack {
   backface-visibility: hidden;
-  transform-style: preserve-3d;
-  transition: 150ms;
-  transform: perspective(1000px) rotateY(var(--rotate-y, 0));
+  position: absolute;
   border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
 }
 
-/* Styles UI Project card back */
 .cardBack {
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  transition: 150ms;
-  transform: perspective(1000px) rotateY(var(--rotate-y, 0));
-  border-radius: 20px;
-}
-
-.frontText {
-  color: black;
+  transform: rotateY(180deg);
 }
 
 /* Adds flip animation onClick of "More Info ->" to flip to back */
-.flipFront {
+.flip {
   transform: rotateY(180deg);
   /* Variable to apply transformation on card when flipped */
   --rotate-y: 180deg;
 }
 
-/* Adds flip animation onClick of "<- Back" to flip to front */
-.flipBack {
-  transform: rotateY(180deg);
-  --rotate-y: 180deg;
+/* Styles UI Project card back */
+/* .cardBack {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: 150ms;
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0));
+  border-radius: 20px;
+} */
+
+
+
+
+
+
+.frontText {
+  color: black;
 }
 
 /* Styles Purple Button with "More Info ->" */

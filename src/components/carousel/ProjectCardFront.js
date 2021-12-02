@@ -17,14 +17,15 @@ import "../../App.css";
 // The flip state must be passed to the component that conditionally renders it
 // The flip animation must be done through a class that I can add to each component but I do not want the animation to start onload or when the carousel is changed. Only upon the first change of state.
 
-const ProjectCardFront = () => {
-  const [flip, setFlip] = useState(false);
+const ProjectCardFront = ({ setFlip }) => {
 
   return (
     <Wrapper
-      className={`cardFront ${flip ? "flipFront" : ""}`}
-      height="80%"
-      width="50%"
+      className="cardFront"
+      // height="80%"
+      // width="50%"
+      height="100%"
+      width="100%"
       backgroundColor="white"
       borderRadius="20px"
       boxShadow="1rem 1rem 1rem black"
@@ -61,7 +62,11 @@ const ProjectCardFront = () => {
         <ProjectDescription className="frontText">
           This is an example
         </ProjectDescription>
-        <button className="flipButton" onClick={() => setFlip(!flip)}>
+        <button 
+          className="flipButton" 
+          //onClick={() => setFlip(!flip)}
+          onClick={() => setFlip(prevState => !prevState)}
+        >
           More Info{" "}
           <FaArrowRight
             style={{ backgroundColor: "rgba(66, 16, 106, 0.01)" }}

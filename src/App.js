@@ -10,12 +10,12 @@ import './App.css';
 //import Carousel from "./components/carousel/Carousel";
 //import Carousel2 from "./components/carousel/Carousel2";
 //import {SliderData} from './components/carousel/SliderData';
-import ProjectCardFront from "./components/carousel/ProjectCardFront";
-import ProjectCardBack from "./components/carousel/ProjectCardBack";
+// import ProjectCardFront from "./components/carousel/ProjectCardFront";
+// import ProjectCardBack from "./components/carousel/ProjectCardBack";
 //import ImageCardBack from "./components/carousel/ImageCardBack";
-import ContactCard from "./components/Contact/ContactForm";
+// import ContactCard from "./components/Contact/ContactForm";
 import Footer from "./components/Footer/footer";
-import ContactBanner from "./components/Contact/ContactBanner";
+// import ContactBanner from "./components/Contact/ContactBanner";
 import Contact from "./components/Contact/Contact";
 import ProjectCard from "./components/carousel/ProjectCard";
 

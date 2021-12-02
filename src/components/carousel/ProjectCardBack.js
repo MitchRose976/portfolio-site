@@ -10,17 +10,18 @@ import InfoButton from "./InfoButton";
 import { FaArrowLeft } from "react-icons/fa";
 import ProjectLabel from "./ProjectLabel";
 
-const ImageCardBack = () => {
-  const [flip, setFlip] = useState(false);
-
+const ImageCardBack = ({ setFlip }) => {
+  
   return (
     <Wrapper
       display="flex"
       alignItems="center"
       justifyContent="center"
-      height="80%"
-      width="50%"
-      className={`cardBack ${flip ? "flipBack" : ""}`}
+      // height="80%"
+      // width="50%"
+      height="100%"
+      width="100%"
+      className="cardBack"
       backgroundColor="white"
       borderRadius="20px"
       boxShadow="1rem 1rem 1rem black"
@@ -28,8 +29,10 @@ const ImageCardBack = () => {
       {/* Back Side */}
       <ProjectLabel
         display="inline-block"
-        width="90%"
-        height="85%"
+        // width="90%"
+        // height="85%"
+        width="100%"
+        height="100%"
         lineHeight="3"
         margin="1.5rem 1rem 3rem 1rem"
         overflow="auto"
@@ -55,7 +58,8 @@ const ImageCardBack = () => {
         margin="0 0 10px 0"
         bottom="0"
         textAlign="center"
-        onClick={() => setFlip(!flip)}
+        //onClick={() => setFlip(!flip)}
+        onClick={() => setFlip(prevState => !prevState)}
       >
         <FaArrowLeft style={{ backgroundColor: "rgba(66, 16, 106, 0.01)" }} />{" "}
         Back{" "}
