@@ -70,24 +70,31 @@
 /* Styles UI Project card front/back */
 
 .project-card {
-  height: 50%;
-  width: 80%;
-  border: 1px solid red;
+  margin: 6rem auto;
+  height: 50rem;
+  width: 40rem;
   perspective: 1000px;
   position: relative;
   transform-style: preserve-3d;
   /* rotateY is based on a variable that is set to 180deg onClick */
   transform: perspective(1000px) rotateY(var(--rotate-y, 0));
-  transition: 150ms; 
+  transition: transform 1s ease-in-out 0s; 
 }
 
 .cardFront,
 .cardBack {
+  height: 100%;
+  width: 100%;
   backface-visibility: hidden;
-  position: absolute;
+  position: absolute !important;
+  /* left: 0;
+  top: 0; */
   border-radius: 20px;
-  cursor: pointer;
-  overflow: hidden;
+  /* overflow: hidden; */
+  transform-style: preserve-3d;
+  box-shadow: 1rem 1rem 1rem black;
+  background-color:white !important;
+  border-radius: 20px;
 }
 
 .cardBack {

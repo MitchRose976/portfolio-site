@@ -51,7 +51,7 @@ function App() {
         {/* <ProjectCardFront/> */}
       </Container>
       {/* Contact */}
-      <Container area='Contact' display="flex" justifyContent="center" alignItems="center">
+      <Container area='Contact' display='flex' alignItems='center' justifyContent='center'>
         <Contact/>
       </Container>
       {/* Footer */}

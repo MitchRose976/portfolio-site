@@ -10,8 +10,12 @@ import InfoButton from "./InfoButton";
 import { FaArrowLeft } from "react-icons/fa";
 import ProjectLabel from "./ProjectLabel";
 
-const ImageCardBack = ({ setFlip }) => {
+const ImageCardBack = ({ isFlipped, flipCard }) => {
   
+  const handleFlip = () => {
+    flipCard(!isFlipped);
+  }
+
   return (
     <Wrapper
       display="flex"
@@ -31,8 +35,6 @@ const ImageCardBack = ({ setFlip }) => {
         display="inline-block"
         // width="90%"
         // height="85%"
-        width="100%"
-        height="100%"
         lineHeight="3"
         margin="1.5rem 1rem 3rem 1rem"
         overflow="auto"
@@ -58,8 +60,8 @@ const ImageCardBack = ({ setFlip }) => {
         margin="0 0 10px 0"
         bottom="0"
         textAlign="center"
-        //onClick={() => setFlip(!flip)}
-        onClick={() => setFlip(prevState => !prevState)}
+        // The state is passed down from ProjectCard.js to this file and this button will change the state of the flip variable used inside the isFlipped property that is attached to the ProjectCardFront and ProjectCardBack
+        onClick={handleFlip}
       >
         <FaArrowLeft style={{ backgroundColor: "rgba(66, 16, 106, 0.01)" }} />{" "}
         Back{" "}

@@ -8,8 +8,8 @@ function ProjectCard() {
 
   return (
     <div className={`project-card ${flip ? "flip" : ""}`}>
-        <ProjectCardFront />
-        <ProjectCardBack />
+        <ProjectCardFront flipCard={setFlip} isFlipped={flip} />
+        <ProjectCardBack flipCard={setFlip} isFlipped={flip} />
     </div>
   );
 }
