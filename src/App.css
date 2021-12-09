@@ -49,17 +49,22 @@
   user-select: none;
 }
 
-/* Adds button fill animation onHover of "Lets Chat" button */
+/* Styles the Bootstrap Carousel holding Project Cards */
 
-.slide {
-  opacity: 0;
-  transition-duration: 1s ease;
+.carousel {
+  width: 100%;
 }
 
-.slide.active {
-  opacity: 1;
-  transition-duration: 1s ease;
-  transform: scale(1.08);
+.carousel-indicators {
+  bottom: 10rem;
+}
+
+.carousel-inner {
+  padding: 5rem;
+}
+
+.carousel-item {
+  padding: 5rem;
 }
 
 /* Styles the Social Media Icons */
@@ -92,7 +97,7 @@
   border-radius: 20px;
   /* overflow: hidden; */
   transform-style: preserve-3d;
-  box-shadow: 1rem 1rem 1rem black;
+  /* box-shadow: 2rem 2rem 2rem black; */
   background-color:white !important;
   border-radius: 20px;
 }
@@ -270,6 +275,23 @@
   .headshot-container {
     padding: 3rem 1rem 0 1rem;
   }
+
+  .carousel-inner {
+    padding: 0;
+  }
+
+  .carousel-item {
+    padding: 0;
+  }
+
+  .carousel-indicators {
+    bottom: 1rem;
+  }
+
+  .project-card {
+    height: 45rem;
+    width: 35rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -303,6 +325,23 @@
 
   .contact {
     flex-direction: row;
+  }
+
+  .carousel-inner {
+    padding: 0;
+  }
+
+  .carousel-item {
+    padding: 0;
+  }
+
+  .carousel-indicators {
+    bottom: 1rem;
+  }
+
+  .project-card {
+    height: 40rem;
+    width: 30rem;
   }
 
 }
@@ -364,6 +403,24 @@
   .contact-pic-container {
     text-align: center;
   }
+
+  .carousel-inner {
+    padding: 0;
+  }
+
+  .carousel-item {
+    padding: 0;
+  }
+
+  .carousel-indicators {
+    bottom: 1rem;
+  }
+
+  .project-card {
+    height: 35rem;
+    width: 25rem;
+  }
+  
 }
 
 @media (max-width: 500px) {
@@ -374,6 +431,23 @@
   .frontText {
     display: none;
     margin-top: 2rem;
+  }
+
+  .carousel-inner {
+    padding: 0;
+  }
+
+  .carousel-item {
+    padding: 0;
+  }
+
+  .carousel-indicators {
+    bottom: 1rem;
+  }
+
+  .project-card {
+    height: 25rem;
+    width: 15rem;
   }
 
 }

@@ -18,6 +18,7 @@ import Footer from "./components/Footer/footer";
 // import ContactBanner from "./components/Contact/ContactBanner";
 import Contact from "./components/Contact/Contact";
 import ProjectCard from "./components/carousel/ProjectCard";
+import BootstrapCarousel from "./components/carousel/Carousel2"
 
 function App() {
 
@@ -40,15 +41,12 @@ function App() {
       {/* Empty container for padding */}
       <Container area='Content4' />
       {/* About */}
-      <Container area='About' style={{backgroundImage: `url(${AboutBackground})` }}>
+      <Container area='About'>
         <About/>
       </Container>
       {/* Projects */}
       <Container area="Projects" className="carousel">
-        {/* <Carousel slides={SliderData}/> */}
-        <ProjectCard/>
-        {/* <ProjectCardBack/> */}
-        {/* <ProjectCardFront/> */}
+        <BootstrapCarousel/>
       </Container>
       {/* Contact */}
       <Container area='Contact' display='flex' alignItems='center' justifyContent='center'>

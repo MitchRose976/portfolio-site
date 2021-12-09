@@ -28,13 +28,14 @@ const ImageCardBack = ({ isFlipped, flipCard }) => {
       className="cardBack"
       backgroundColor="white"
       borderRadius="20px"
-      boxShadow="1rem 1rem 1rem black"
+      // boxShadow="1rem 1rem 1rem black"
+      boxShadow="0 0 5rem rem black"
     >
       {/* Back Side */}
       <ProjectLabel
         display="inline-block"
         // width="90%"
-        // height="85%"
+        height="80%"
         lineHeight="3"
         margin="1.5rem 1rem 3rem 1rem"
         overflow="auto"

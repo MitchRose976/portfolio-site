@@ -26,6 +26,7 @@ const ProjectLabel = styled.div`
   backface-visibility: hidden;
   overflow: ${(props) => props.overflow};
   text-overflow: ${(props) => props.textOverflow};
+  word-wrap: ${(props) => props.wordWrap};
   @media (max-width: 1024px) {
     line-height: 2;
   }
