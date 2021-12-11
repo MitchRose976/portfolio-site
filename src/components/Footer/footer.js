@@ -11,7 +11,7 @@ function Footer() {
     <Container width="100%" position="relative" color="white" borderTop="2px solid white">
       {/* Logo */}
       <FooterLogoDiv>
-        <FooterLogo>MR</FooterLogo>
+        <FooterLogo href="#home">MR</FooterLogo>
       </FooterLogoDiv>
       {/* Links/Media Container */}
       <Container
@@ -26,30 +26,25 @@ function Footer() {
         {/* Links */}
         <FooterList>
           <FooterListItem>
-            <FooterLink>About</FooterLink>
+            <FooterLink href="#about">About</FooterLink>
           </FooterListItem>
           <FooterListItem>
-            <FooterLink>Projects</FooterLink>
+            <FooterLink href="#projects">Projects</FooterLink>
           </FooterListItem>
           <FooterListItem>
-            <FooterLink>Contact</FooterLink>
+            <FooterLink href="#contact">Contact</FooterLink>
           </FooterListItem>
         </FooterList>
         {/* Media */}
         <MediaList>
           <MediaListItem>
             <FooterLink>
-              <VscGithubInverted color="white" className="media-icons" />
+              <VscGithubInverted color="white" className="media-icons" size={30}/>
             </FooterLink>
           </MediaListItem>
           <MediaListItem>
             <FooterLink>
-              <BsLinkedin color="#0e76a8" className="media-icons" />
-            </FooterLink>
-          </MediaListItem>
-          <MediaListItem>
-            <FooterLink>
-              <GrFacebook color="#3b5998" className="media-icons" />
+              <BsLinkedin color="#0e76a8" className="media-icons" size={30}/>
             </FooterLink>
           </MediaListItem>
         </MediaList>
@@ -70,8 +65,14 @@ const FooterLogoDiv = styled.div`
   left: 0;
 `;
 
-const FooterLogo = styled.h1`
+const FooterLogo = styled.a`
   font-size: 4rem;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    color: var(--aqua);
+  }
   @media only screen and (max-width: 1024px) {
     font-size: 3rem;
   }
@@ -101,6 +102,7 @@ const FooterListItem = styled.li`
     margin-right: 3rem;
   }
   @media only screen and (max-width: 500px) {
+    margin-right: 0rem;
     padding-bottom: 0.8rem;
     display: block;
   }
@@ -128,13 +130,18 @@ const MediaList = styled.ul`
 const MediaListItem = styled.li`
   color: white;
   text-decoration: none;
-  padding-bottom: 0.5rem;
+  padding: 1rem 0;
+  
 `;
 
 const FooterLink = styled.a`
   color: white;
   cursor: pointer;
   font-size: 1.3rem;
+  text-decoration: none;
+  &:hover {
+    color: var(--aqua);
+  }
   @media only screen and (max-width: 1024px) {
     font-size: 1.3rem;
   }
@@ -142,7 +149,7 @@ const FooterLink = styled.a`
     font-size: 1.1rem;
   }
   @media only screen and (max-width: 500px) {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 `;
 

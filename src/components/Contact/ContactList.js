@@ -48,6 +48,9 @@ const ListItem = styled.li`
   display: flex;
   align-items: center;
   margin-bottom: 3rem;
+  @media (max-width: 768px) {
+    margin-bottom: 1.8rem;
+  }
 `;
 
 const ListItemLabel = styled.span`
@@ -65,6 +68,9 @@ const ListItemLabelText = styled.span`
   font-size: 1rem;
   background-color: white;
   opacity: 0.7;
+  @media (max-width: 280px) {
+    font-size: 1.1rem;
+  }
 `;
 
 export default ContactList;

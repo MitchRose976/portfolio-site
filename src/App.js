@@ -25,13 +25,13 @@ function App() {
   return (
     <GridWrapper>
       {/* Navbar */}
-      <Container area={"nav"}>
+      <Container area={"nav"} id="home">
         <Navbar/>
       </Container>
       {/* Empty container for padding */}
       <Container area={"Content1"}/>
       {/* Welcome Message */}
-      <Container area={"WelcomeMessage"}>
+      <Container area={"WelcomeMessage"} id="welcome">
         <WelcomeMessage/>
       </Container>
       {/* Headshot */}
@@ -39,17 +39,17 @@ function App() {
         <Headshot/>
       </Container>
       {/* Empty container for padding */}
-      <Container area='Content4' />
+      <Container area='Content4'/>
       {/* About */}
-      <Container area='About'>
+      <Container area='About' id="about">
         <About/>
       </Container>
       {/* Projects */}
-      <Container area="Projects" className="carousel">
+      <Container area="Projects" className="carousel" id="projects">
         <BootstrapCarousel/>
       </Container>
       {/* Contact */}
-      <Container area='Contact' display='flex' alignItems='center' justifyContent='center'>
+      <Container area='Contact' display='flex' alignItems='center' justifyContent='center' id="contact">
         <Contact/>
       </Container>
       {/* Footer */}

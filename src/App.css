@@ -68,9 +68,7 @@
 }
 
 /* Styles the Social Media Icons */
-.media-icons {
-  font-size: 1.8rem;
-}
+
 
 /* Styles UI Project card front/back */
 
@@ -113,20 +111,7 @@
   --rotate-y: 180deg;
 }
 
-/* Styles UI Project card back */
-/* .cardBack {
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  transition: 150ms;
-  transform: perspective(1000px) rotateY(var(--rotate-y, 0));
-  border-radius: 20px;
-} */
-
-
-
-
-
-
+/* Styles text on front of project card */
 .frontText {
   color: black;
 }
@@ -262,8 +247,8 @@
 /* Styles Icons in the Contact List (White half of the Contact form) */
 .contact-list-icon {
   background-color: white;
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 
@@ -448,6 +433,37 @@
   .project-card {
     height: 25rem;
     width: 15rem;
+  }
+
+  .contact-pic-container {
+    height: 9rem;
+    width: 12rem;
+  }
+
+}
+
+@media (max-width: 280px) {
+
+  .contact-pic-container {
+    height: 9rem;
+    width: 12rem;
+  }
+
+  .contact {
+    width: 90% !important;
+  }
+
+  .contact-icon {
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.3rem;
+  }
+
+  .contact-list-icon {
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
   }
 
 }
