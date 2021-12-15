@@ -15,9 +15,9 @@ const Navbar = () => {
         <span />
       </Hamburger>
       <Menu isOpen={isOpen}>
-        <MenuItem href="">About</MenuItem>
-        <MenuItem href="">Projects</MenuItem>
-        <MenuItem href="">Contact</MenuItem>
+        <MenuItem href="#about">About</MenuItem>
+        <MenuItem href="#projects">Projects</MenuItem>
+        <MenuItem href="#contact">Contact</MenuItem>
       </Menu>
     </Nav>
   );

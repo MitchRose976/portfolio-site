@@ -25,7 +25,7 @@ function ContactInfo() {
         </ContactLabel>
         <ContactText>Contact me below if you want to chat!</ContactText>
         <ContactList />
-        <ContactImage />
+        {/* <ContactImage /> */}
       </Container>
     </Wrapper>
   );

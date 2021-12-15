@@ -18,7 +18,7 @@ import Footer from "./components/Footer/footer";
 // import ContactBanner from "./components/Contact/ContactBanner";
 import Contact from "./components/Contact/Contact";
 import ProjectCard from "./components/carousel/ProjectCard";
-import BootstrapCarousel from "./components/carousel/Carousel2"
+import BootstrapCarousel from "./components/carousel/Carousel"
 
 function App() {
 
@@ -49,7 +49,7 @@ function App() {
         <BootstrapCarousel/>
       </Container>
       {/* Contact */}
-      <Container area='Contact' display='flex' alignItems='center' justifyContent='center' id="contact">
+      <Container area='Contact' id="contact" display='flex' alignItems='center' justifyContent='center' id="contact">
         <Contact/>
       </Container>
       {/* Footer */}
@@ -63,6 +63,7 @@ function App() {
 const GridWrapper = styled.div`
   display: grid;
   height: 200vh;
+  max-width: 200vh;
   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
   grid-template-rows: 0.6fr 3fr 3fr 3fr 3fr 1fr;
   justify-content: space-between;

@@ -13,7 +13,7 @@ function Contact() {
         justifyContent="center"
         alignItems="center"
         className="contact"
-        margin="3rem 0 3rem 0"
+        margin="1rem 0 3rem 0"
         >
             <ContactForm/>
             <ContactInfo/>

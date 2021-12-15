@@ -40,6 +40,7 @@ const List = styled.ul`
   color: black;
   background-color: white;
   margin-top: 1.7rem;
+  padding-left: 0;
 `;
 
 const ListItem = styled.li`
