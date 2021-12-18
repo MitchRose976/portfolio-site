@@ -26,14 +26,10 @@ const Navbar = () => {
 // Nav
 const Nav = styled.div`
   display: flex;
-  padding: 0 2rem;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  background-color: transparent;
   z-index: 999;
 `;
 

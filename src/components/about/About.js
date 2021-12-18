@@ -21,11 +21,9 @@ function About() {
       <SubHeader>"What does he do?"</SubHeader>
       <Text>
         Great question! I build unique and stunning User Interface Designs in
-        HTML, CSS, Javascript, and React. My goal is the same for
-        every project. To create a UI experience that will leave every user
-        feeling great.
+        HTML, CSS, Javascript, and React. My goal for every project is to create a simple UI/UX that will leave all users satisfied.
       </Text>
-      <SubHeader>"Whats the Motivation?"</SubHeader>
+      <SubHeader>"Whats his Motivation?"</SubHeader>
       <Text>
         How many times are you on a website and think "I'd love to find whoever
         designed this website and .... " ---- Well, you know the rest. I want to
@@ -38,10 +36,13 @@ function About() {
 }
 
 const Text = styled.p`
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: white;
   padding: 2rem 3rem 0 2rem;
   text-align: left;
   line-height: 1.7;
+  @media (max-width: 500px) {
+    font-size: 1.3rem;
+  }
 `;
 export default About;

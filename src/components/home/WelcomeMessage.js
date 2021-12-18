@@ -6,12 +6,12 @@ import Container from "../Container.js";
 
 const WelcomeMessage = () => {
   return (
-    <Container>
+    <Container backgroundColor="transparent">
       <Text style={{ marginTop: "5rem" }}>Hey there!</Text>
       <Name>I'm Mitch,</Name>
       <Text>Your next Front-End Developer.</Text>
       <Watermark>CSS / Javascript / React</Watermark>
-      <Button>Lets Chat</Button>
+      <Button><Link href="#contact">Lets Chat</Link></Button>
     </Container>
   );
 }
@@ -59,5 +59,14 @@ const Button = styled.button`
     }
   }
 `;
+
+const Link = styled.a`
+  text-decoration: none;
+  background: transparent;
+  color: var(--pink);
+  &:hover {
+    color: white;
+  }
+`
 
 export default WelcomeMessage;

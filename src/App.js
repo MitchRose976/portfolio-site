@@ -64,16 +64,17 @@ const GridWrapper = styled.div`
   display: grid;
   height: 200vh;
   max-width: 200vh;
+  background: var(--background);
   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
   grid-template-rows: 0.6fr 3fr 3fr 3fr 3fr 1fr;
   justify-content: space-between;
   grid-template-areas:
-    "nav nav nav nav"
+    "Content1 nav nav Content4"
     "Content1 WelcomeMessage Headshot Content4"
     "Content1 About About Content4"
     "Content1 Projects Projects Content4"
     "Content1 Contact Contact Content4"
-    "Footer Footer Footer Footer";
+    "Content1 Footer Footer Content4";
   grid-gap: 1rem;
 
   @media only screen and (max-width: 1024px) {

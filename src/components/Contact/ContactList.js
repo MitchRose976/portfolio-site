@@ -7,8 +7,8 @@ import { MdEmail } from "react-icons/md";
 function ContactList() {
   return (
     <List>
-      <ListItem>
-        <IoLocationSharp className="contact-list-icon" />
+      <ListItem >
+        <IoLocationSharp className="contact-list-icon"/>
         <ListItemLabel>
           Location:{" "}
           <ListItemLabelText>
@@ -35,12 +35,14 @@ function ContactList() {
 const List = styled.ul`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   list-style: none;
   text-align: left;
   color: black;
   background-color: white;
+  border: 1px solid var(--aqua);
   margin-top: 1.7rem;
-  padding-left: 0;
+  padding: 1rem;
 `;
 
 const ListItem = styled.li`

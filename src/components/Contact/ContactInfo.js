@@ -25,7 +25,6 @@ function ContactInfo() {
         </ContactLabel>
         <ContactText>Contact me below if you want to chat!</ContactText>
         <ContactList />
-        {/* <ContactImage /> */}
       </Container>
     </Wrapper>
   );
@@ -34,8 +33,8 @@ function ContactInfo() {
 const ContactLabel = styled.h1`
   font-size: 2.3rem;
   text-align: center;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: var(--purple);
   display: flex;
   @media only screen and (max-width: 280px) {
     font-size: 1.7rem;
@@ -43,10 +42,10 @@ const ContactLabel = styled.h1`
 `;
 
 const ContactText = styled.h2`
-  font-size: 1.3rem;
-  opacity: 0.6;
+  font-size: 1.7rem;
+  font-weight: 700;
   color: black;
-  background-color: white;
+  background-color: transparent;
   display: flex;
 `;
 

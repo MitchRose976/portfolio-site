@@ -8,7 +8,7 @@ import { GrFacebook } from "react-icons/gr";
 
 function Footer() {
   return (
-    <Container width="100%" position="relative" color="white" borderTop="2px solid white">
+    <Container width="100%" position="relative" color="white" >
       {/* Logo */}
       <FooterLogoDiv>
         <FooterLogo href="#home">MR</FooterLogo>
