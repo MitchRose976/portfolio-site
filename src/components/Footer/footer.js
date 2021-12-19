@@ -1,68 +1,56 @@
 import React from "react";
 import Container from "../Container";
 import styled from "styled-components";
-import '../../App.css';
+import "../../App.css";
 import { VscGithubInverted } from "react-icons/vsc";
 import { BsLinkedin } from "react-icons/bs";
 import { GrFacebook } from "react-icons/gr";
 
 function Footer() {
   return (
-    <Container width="100%" position="relative" color="white" >
+    <Container
+      width="100%"
+      position="relative"
+      color="white"
+      display="flex"
+      justifyContent="space-around"
+      alignItems="center"
+      flexDirection="row"
+    >
       {/* Logo */}
-      <FooterLogoDiv>
-        <FooterLogo href="#home">MR</FooterLogo>
-      </FooterLogoDiv>
-      {/* Links/Media Container */}
-      <Container
-        width="70%"
-        height="10rem"
-        display="flex"
-        position="absolute"
-        justifyContent="center"
-        alignItems="center"
-        right="0"
-      >
-        {/* Links */}
-        <FooterList>
-          <FooterListItem>
-            <FooterLink href="#about">About</FooterLink>
-          </FooterListItem>
-          <FooterListItem>
-            <FooterLink href="#projects">Projects</FooterLink>
-          </FooterListItem>
-          <FooterListItem>
-            <FooterLink href="#contact">Contact</FooterLink>
-          </FooterListItem>
-        </FooterList>
-        {/* Media */}
-        <MediaList>
-          <MediaListItem>
-            <FooterLink>
-              <VscGithubInverted color="white" className="media-icons" size={30}/>
-            </FooterLink>
-          </MediaListItem>
-          <MediaListItem>
-            <FooterLink>
-              <BsLinkedin color="#0e76a8" className="media-icons" size={30}/>
-            </FooterLink>
-          </MediaListItem>
-        </MediaList>
-      </Container>
+      <FooterLogo href="#home">MR</FooterLogo>
+      {/* Links */}
+      <FooterList>
+        <FooterListItem>
+          <FooterLink href="#about">About</FooterLink>
+        </FooterListItem>
+        <FooterListItem>
+          <FooterLink href="#projects">Projects</FooterLink>
+        </FooterListItem>
+        <FooterListItem>
+          <FooterLink href="#contact">Contact</FooterLink>
+        </FooterListItem>
+      </FooterList>
+      {/* Media */}
+      <MediaList>
+        <MediaListItem>
+          <FooterLink>
+            <VscGithubInverted
+              color="white"
+              className="media-icons"
+              size={30}
+            />
+          </FooterLink>
+        </MediaListItem>
+        <MediaListItem>
+          <FooterLink>
+            <BsLinkedin color="#0e76a8" className="media-icons" size={30} />
+          </FooterLink>
+        </MediaListItem>
+      </MediaList>
     </Container>
   );
 }
-
-const FooterLogoDiv = styled.div`
-  width: 30%;
-  height: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  position: absolute;
-  left: 0;
-`;
 
 const FooterLogo = styled.a`
   font-size: 4rem;
@@ -93,16 +81,15 @@ const FooterListItem = styled.li`
   color: white;
   text-decoration: none;
   display: inline;
-  margin-right: 8rem;
+  margin: 0 4rem;
   @media only screen and (max-width: 1100px) {
-    margin-right: 5rem;
+    margin: 0 3rem;
   }
   @media only screen and (max-width: 768px) {
-    margin-right: 3rem;
+    margin: 0 2rem;
   }
-  @media only screen and (max-width: 500px) {
-    margin-right: 0rem;
-    padding-bottom: 0.8rem;
+  @media only screen and (max-width: 550px) {
+    margin: 1rem 1rem;
     display: block;
   }
 `;
@@ -111,26 +98,12 @@ const FooterListItem = styled.li`
 const MediaList = styled.ul`
   color: white;
   list-style: none;
-  @media only screen and (max-width: 1031px) {
-    margin-left: 0rem;
-    padding-left: 0rem !important;
-  }
-  @media only screen and (max-width: 768px) {
-    margin-left: 2rem;
-  }
-  @media only screen and (max-width: 500px) {
-    margin-left: 6rem;
-  }
-  @media only screen and (max-width: 320px) {
-    margin-left: 1rem;
-  }
 `;
 
 const MediaListItem = styled.li`
   color: white;
   text-decoration: none;
   padding: 1rem 0;
-  
 `;
 
 const FooterLink = styled.a`
@@ -147,7 +120,7 @@ const FooterLink = styled.a`
   @media only screen and (max-width: 768px) {
     font-size: 1.1rem;
   }
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 550px) {
     font-size: 1rem;
   }
 `;

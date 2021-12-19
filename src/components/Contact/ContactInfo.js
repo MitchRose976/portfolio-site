@@ -4,7 +4,6 @@ import Wrapper from "../UI/Wrapper";
 import ContactList from "./ContactList";
 import styled from "styled-components";
 import { FcBusinessContact } from "react-icons/fc";
-import ContactImage from "./ContactImage";
 import "../../App.css";
 
 function ContactInfo() {
@@ -33,8 +32,8 @@ function ContactInfo() {
 const ContactLabel = styled.h1`
   font-size: 2.3rem;
   text-align: center;
-  color: white;
-  background-color: var(--purple);
+  color: black;
+  background-color: white;
   display: flex;
   @media (max-width: 750px) {
     color: black;
@@ -49,7 +48,7 @@ const ContactLabel = styled.h1`
 const ContactText = styled.h2`
   font-size: 1.4rem;
   font-weight: 700;
-  color: rgb(255,255,255, 0.6);
+  color: black;
   background-color: transparent;
   display: flex;
   @media (max-width: 750px) {

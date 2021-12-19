@@ -3,11 +3,10 @@ import styled from "styled-components";
 import Header from "../Header";
 import SubHeader from "../SubHeader";
 import Container from "../Container";
-//import background from "./coding.jpeg";
 
 function About() {
   return (
-    <Container>
+    <Container padding="2rem 0 0 2rem">
       <Header>About</Header>
       <SubHeader>"So Who is this Mitch guy?"</SubHeader>
       <Text>
@@ -38,7 +37,7 @@ function About() {
 const Text = styled.p`
   font-size: 1.5rem;
   color: white;
-  padding: 2rem 3rem 0 2rem;
+  margin-top: 2rem;
   text-align: left;
   line-height: 1.7;
   @media (max-width: 500px) {
