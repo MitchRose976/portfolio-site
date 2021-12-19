@@ -29,6 +29,10 @@ const Text = styled.h2`
     font-size: 2rem;
     padding-left: 1.2rem;
   }
+  @media (max-width: 280px) {
+    font-size: 1.8rem;
+    padding-left: 1.2rem;
+  }
 `;
 
 const Button = styled.button`

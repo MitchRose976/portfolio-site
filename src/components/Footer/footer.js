@@ -59,7 +59,6 @@ const FooterLogoDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  ${"" /* border-top: 1px solid red; */}
   color: white;
   position: absolute;
   left: 0;
@@ -95,8 +94,8 @@ const FooterListItem = styled.li`
   text-decoration: none;
   display: inline;
   margin-right: 8rem;
-  @media only screen and (max-width: 1024px) {
-    margin-right: 6rem;
+  @media only screen and (max-width: 1100px) {
+    margin-right: 5rem;
   }
   @media only screen and (max-width: 768px) {
     margin-right: 3rem;
@@ -112,15 +111,15 @@ const FooterListItem = styled.li`
 const MediaList = styled.ul`
   color: white;
   list-style: none;
-  margin-left: 5rem;
-  @media only screen and (max-width: 1024px) {
-    margin-left: 5rem;
+  @media only screen and (max-width: 1031px) {
+    margin-left: 0rem;
+    padding-left: 0rem !important;
   }
   @media only screen and (max-width: 768px) {
     margin-left: 2rem;
   }
   @media only screen and (max-width: 500px) {
-    margin-left: 2.5rem;
+    margin-left: 6rem;
   }
   @media only screen and (max-width: 320px) {
     margin-left: 1rem;
@@ -142,7 +141,7 @@ const FooterLink = styled.a`
   &:hover {
     color: var(--aqua);
   }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1100px) {
     font-size: 1.3rem;
   }
   @media only screen and (max-width: 768px) {

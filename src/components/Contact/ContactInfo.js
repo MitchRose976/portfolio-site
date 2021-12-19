@@ -36,17 +36,26 @@ const ContactLabel = styled.h1`
   color: white;
   background-color: var(--purple);
   display: flex;
-  @media only screen and (max-width: 280px) {
+  @media (max-width: 750px) {
+    color: black;
+    background-color: white;
+    font-size: 2rem;
+  }
+  @media (max-width: 280px) {
     font-size: 1.7rem;
   }
 `;
 
 const ContactText = styled.h2`
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  color: black;
+  color: rgb(255,255,255, 0.6);
   background-color: transparent;
   display: flex;
+  @media (max-width: 750px) {
+    color: black;
+    font-size: 1.4rem;
+  }
 `;
 
 

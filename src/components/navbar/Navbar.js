@@ -30,7 +30,11 @@ const Nav = styled.div`
   align-items: center;
   flex-wrap: wrap;
   background-color: transparent;
+  padding-right: 1rem;
   z-index: 999;
+  @media (max-width: 768px) {
+    padding-right: 3rem !important;
+  }
 `;
 
 // Logo

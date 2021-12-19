@@ -68,8 +68,6 @@
   padding: 5rem;
 }
 
-/* Styles the Social Media Icons */
-
 
 /* Styles UI Project card front/back */
 
@@ -178,6 +176,7 @@
   flex-direction: column;
   height: 35rem;
   background:linear-gradient(160deg, var(--purple), var(--purple) 60%, white 60%, white);
+  
 }
 
 /* Styles the Contact Icon in Contact Section */
@@ -239,7 +238,7 @@
   align-items: flex-start;
   border-radius: 0 2rem 2rem 0;
   height: 35rem;
-  background:linear-gradient(160deg, var(--purple), var(--purple) 36.9%, white 20%, white);
+  background:linear-gradient(17deg, white,  white 41.6%, var(--purple) 20%, var(--purple));
 }
 
 /* Styles the Container that holds the Contact animation (The guy with the headset on) */
@@ -304,6 +303,7 @@
 }
 
 @media (max-width: 768px) {
+  
   .media-icons {
     font-size: 1.4rem;
   }
@@ -341,6 +341,58 @@
     width: 30rem;
   }
 
+  .contact-info {
+    border: none;
+    background:linear-gradient(17deg, white,  white 41%, var(--purple) 20%, var(--purple));
+  }
+
+}
+
+@media (max-width: 750px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact-card-purple {
+    border-radius: 2rem 2rem 0 0;
+    background-color: var(--purple);
+    width: 100% !important;
+  }
+
+  .contact-card-white {
+    border-radius: 0 0 2rem 2rem;
+    background-color: white;
+    width: 100% !important;
+  }
+
+
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem 2rem 0 0 !important;
+    flex-direction: column;
+    padding: 1rem !important;
+    height: 35rem;
+  }
+
+  .contact-info {
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 2rem 2rem !important;
+    flex-direction: column;
+    padding: 1rem !important;
+    height: 35rem;
+    background:linear-gradient(17deg, var(--purple),  var(--purple) 41%, white 20%, white);
+  }
+
+  .contact-icon {
+    background-color: white;
+  }
+
+
 }
 
 
@@ -352,7 +404,6 @@
 
   .contact {
     flex-direction: column;
-    width: 75% !important;
   }
 
   .contact-card-purple {

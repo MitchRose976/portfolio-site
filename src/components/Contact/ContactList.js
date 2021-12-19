@@ -40,7 +40,7 @@ const List = styled.ul`
   text-align: left;
   color: black;
   background-color: white;
-  border: 1px solid var(--aqua);
+  border: 2px solid var(--aqua);
   margin-top: 1.7rem;
   padding: 1rem;
 `;
