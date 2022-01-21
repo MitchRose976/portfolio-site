@@ -19,16 +19,15 @@ function About() {
       </Text>
       <SubHeader>"What does he do?"</SubHeader>
       <Text>
-        Great question! I build unique and stunning User Interface Designs in
-        HTML, CSS, Javascript, and React. My goal for every project is to create a simple UI/UX that will leave all users satisfied.
+        Great question! I build full-stack applications in
+        HTML, CSS, Javascript, React, Node and MongoDB. Right now my focus is improving my skills with the MERN stack. My goal for every project is to create a simple UI/UX that will leave every user satisfied.
       </Text>
       <SubHeader>"Whats his Motivation?"</SubHeader>
       <Text>
         How many times are you on a website and think "I'd love to find whoever
         designed this website and .... " ---- Well, you know the rest. I want to
-        change that by bringing fresh ideas to the table that support your brand
-        and build its identity. Something that catches the eye and illustrates
-        the message you want your customers and clients to recieve.
+        change that by bringing fresh ideas to the table that support your brand or organization
+        and build its identity. Lets grow together.
       </Text>
     </Container>
   );

@@ -9,8 +9,8 @@ const WelcomeMessage = () => {
     <Container backgroundColor="transparent">
       <Text style={{ marginTop: "5rem" }}>Hey there!</Text>
       <Name>I'm Mitch,</Name>
-      <Text>Your next Front-End Developer.</Text>
-      <Watermark>CSS / Javascript / React</Watermark>
+      <Text>Your next Full-Stack Developer.</Text>
+      <Watermark>CSS / Javascript / React / Node / MongoDB </Watermark>
       <Button><Link href="#contact">Lets Chat</Link></Button>
     </Container>
   );

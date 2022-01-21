@@ -170,6 +170,10 @@
 /* Styles the Purple half of the Contact Form */
 .contact-form {
   display: flex;
+  position: relative;
+  overflow: hidden;
+  backface-visibility: hidden;
+  padding: 1rem 1rem 1rem 2rem;
   justify-content: center;
   align-items: flex-start;
   border-radius: 2rem 0 0 2rem;
@@ -212,7 +216,7 @@
   background-color: white;
   border-bottom: 1.5px solid white;
   margin-bottom: 0.5rem;
-  color: white;
+  color: black;
 }
 
 .email-body {
@@ -225,7 +229,7 @@
   border: 5px solid black;
   border: 0;
   outline: 0;
-  color: white;
+  color: black;
   padding: 0.5rem;
   font-size: 1.2rem;
   border: 3px solid var(--aqua);

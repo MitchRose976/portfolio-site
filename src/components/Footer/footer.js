@@ -34,7 +34,7 @@ function Footer() {
       {/* Media */}
       <MediaList>
         <MediaListItem>
-          <FooterLink>
+          <FooterLink href="https://github.com/MitchRose976">
             <VscGithubInverted
               color="white"
               className="media-icons"
@@ -43,7 +43,7 @@ function Footer() {
           </FooterLink>
         </MediaListItem>
         <MediaListItem>
-          <FooterLink>
+          <FooterLink href="https://www.linkedin.com/in/mitchell-rose-2733a9120/">
             <BsLinkedin color="#0e76a8" className="media-icons" size={30} />
           </FooterLink>
         </MediaListItem>

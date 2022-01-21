@@ -7,37 +7,35 @@ import "../../App.css";
 function ContactForm() {
   return (
     <Wrapper className="contact-card-purple">
-      <Container
-        position="relative"
-        overflow="hidden"
-        backfaceVisibility="hidden"
-        padding="1rem 1rem 1rem 2rem"
+      <form
         className="contact-form"
+        action="https://formsubmit.co/mitch.j.rose@outlook.com"
+        method="POST"
       >
-        <ContactLabel>
-          Send Me A Message
-        </ContactLabel>
+        <ContactLabel>Send Me A Message</ContactLabel>
         <label className="form-label">
           <span>Name</span>
         </label>
-        <input type="text" className="form-input"></input>
+        <input type="text" name="name" className="form-input" required></input>
         <label className="form-label">
           <span>Email</span>
         </label>
-        <input type="email" className="form-input"></input>
+        <input type="email" name="email" className="form-input" required></input>
+        <input type="hidden" name="_autoresponse" value="Thank you so much for reaching out! We will be in touch shortly. Feel free to call me at 416-779-2166."></input>
         <label className="form-label">
           <span>Message</span>
         </label>
         <textarea
           className="email-body"
-          name="comment[body]"
+          type="text"
+          name="message"
           rows="1"
           cols="60"
           wrap="physical"
           id="comment_text_area"
         ></textarea>
-        <SubmitButton>Submit</SubmitButton>
-      </Container>
+        <SubmitButton type="submit">Submit</SubmitButton>
+      </form>
     </Wrapper>
   );
 }
@@ -57,11 +55,11 @@ const SubmitButton = styled.button`
   background-color: transparent;
   border-radius: 0.5rem;
   cursor: pointer;
-  color: white;
+  color: black;
   font-size: 1rem;
   overflow: hidden;
-  border: 3px solid white;
-  transition: all .5s ease;
+  border: 3px solid var(--aqua);
+  transition: all 0.5s ease;
   &:hover {
     color: black;
     background-color: var(--aqua);
