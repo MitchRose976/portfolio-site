@@ -4,7 +4,7 @@ import Container from "../Container";
 import ProjectLabel from "./ProjectLabel";
 import ProjectTitle from "./ProjectTitle";
 import ProjectDescription from "./ProjectDescription";
-import Pic from "../../images/pic1.jpg";
+import Pic from "../../images/Library.jpg";
 import { FaArrowRight, FaLeaf } from "react-icons/fa";
 import Wrapper from "../UI/Wrapper";
 import "../../App.css";
@@ -26,11 +26,6 @@ const ProjectCardFront = ({ isFlipped, flipCard }) => {
   return (
     <Wrapper
       className="cardFront"
-      // height="100%"
-      // width="100%"
-      // backgroundColor="white"
-      // borderRadius="20px"
-      // boxShadow="1rem 1rem 1rem black"
     >
       {/* Front Side */}
       <Container
@@ -60,9 +55,9 @@ const ProjectCardFront = ({ isFlipped, flipCard }) => {
         borderBottomLeftRadius="20px"
         borderBottomRightRadius="20px"
       >
-        <ProjectTitle>Project 1</ProjectTitle>
+        <ProjectTitle>C++ Library Application</ProjectTitle>
         <ProjectDescription className="frontText">
-          This is an example
+          This is a Library database system I built using C++
         </ProjectDescription>
         <button 
           className="flipButton" 
