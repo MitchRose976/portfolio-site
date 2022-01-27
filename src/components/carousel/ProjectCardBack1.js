@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import styled from "styled-components";
+import styled from "styled-components";
 //import Container from "../Container";
 import Wrapper from "../UI/Wrapper";
 //import ProjectTitle from "./ProjectTitle";
@@ -54,6 +54,8 @@ const ImageCardBack = ({ isFlipped, flipCard }) => {
           a user adds a unit to their army list, it will be rendered with the
           DOM and sorted in to its unit type category in a nicely styled list
           that the user can print.
+          <br></br>
+          <ProjectLink href="https://loving-volhard-3f5710.netlify.app">See Here!</ProjectLink>
         </ProjectDescription>
       </ProjectLabel>
       <InfoButton
@@ -70,5 +72,11 @@ const ImageCardBack = ({ isFlipped, flipCard }) => {
     </Wrapper>
   );
 };
+
+const ProjectLink = styled.a`
+    background-color: white;
+    color: var(--aqua);
+    font-size: 2rem;
+`
 
 export default ImageCardBack;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import styled from "styled-components";
+import styled from "styled-components";
 //import Container from "../Container";
 import Wrapper from "../UI/Wrapper";
 //import ProjectTitle from "./ProjectTitle";
@@ -39,6 +39,8 @@ const ImageCardBack = ({ isFlipped, flipCard }) => {
       >
         <ProjectDescription>
           This is a full stack application I made using the MERN stack. This app tracks current NHL games being played and gives the user a live stats update showing them the score of the game, the lime left and the goals scored and which players scored them. You can also use this app to see league standings, team rosters with up to date stats for each player, and also the current league leaders for each statistic. This app was really fun for me to build because I am a huge hockey fan and I learned how to set up a server and a database using Node, Express, MongoDB, and Mongoose. This was also my first project using API's. I built this entire application using the data from the NHL API.
+          <br></br>
+          <ProjectLink href="https://elastic-aryabhata-ede838.netlify.app/">See Here!</ProjectLink>
         </ProjectDescription>
       </ProjectLabel>
       <InfoButton
@@ -55,5 +57,11 @@ const ImageCardBack = ({ isFlipped, flipCard }) => {
     </Wrapper>
   );
 };
+
+const ProjectLink = styled.a`
+    background-color: white;
+    color: var(--aqua);
+    font-size: 2rem;
+`
 
 export default ImageCardBack;
