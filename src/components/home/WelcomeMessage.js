@@ -27,7 +27,7 @@ const Text = styled.h2`
   }
   @media (max-width: 768px) {
     font-size: 2rem;
-    padding-left: 1.2rem;
+    ${'' /* padding-left: 1.2rem; */}
   }
   @media (max-width: 280px) {
     font-size: 1.8rem;

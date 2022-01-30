@@ -40,7 +40,7 @@ const ImageCardBack = ({ isFlipped, flipCard }) => {
         <ProjectDescription>
           This is a console application I built using C++. This project was a huge learning experience for me because prior to using C++, I worked with JavaScript. C++ is a lower level language that requires a lot more attention to detail. By doing this project, I learned very important concepts about Object Oriented Programming, how to implement modular design (which I now use in React), how to work with pointers and references, class design and inheritance, and how to use dynamic memory allocation. The Library is built using a database which in this case is a .txt file. I overloaded the insertion and extraction operators to read and write to the database and used dynamic memory allocation to add, remove, check out, and return a book.
             <br></br>
-        <ProjectLink href="https://github.com/MitchRose976/Library-Database">See here!</ProjectLink> 
+        <ProjectLink href="https://drive.google.com/file/d/1GWYJpogwbg1dk4FtvaArMlvAg8jc6Lw5/view?usp=sharing">See here!</ProjectLink> 
         </ProjectDescription>
       </ProjectLabel>
       <InfoButton
@@ -61,7 +61,7 @@ const ImageCardBack = ({ isFlipped, flipCard }) => {
 const ProjectLink = styled.a`
     background-color: white;
     color: var(--aqua);
-    font-size: 2rem;
+    font-size: 1.5rem;
 `
 
 export default ImageCardBack;

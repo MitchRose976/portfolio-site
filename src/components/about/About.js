@@ -6,7 +6,7 @@ import Container from "../Container";
 
 function About() {
   return (
-    <Container padding="2rem 0 0 2rem">
+    <Container padding="2rem">
       <Header>About</Header>
       <SubHeader>"So Who is this Mitch guy?"</SubHeader>
       <Text>
@@ -20,14 +20,11 @@ function About() {
       <SubHeader>"What does he do?"</SubHeader>
       <Text>
         Great question! I build full-stack applications in
-        HTML, CSS, Javascript, React, Node and MongoDB. Right now my focus is improving my skills with the MERN stack. My goal for every project is to create a simple UI/UX that will leave every user satisfied.
+        HTML, CSS, Javascript, React, Node and MongoDB. Right now my focus is improving my skills with the MERN stack. My goal for every project is to write clean, simple, and efficient code that will make the end user's experience amazing.
       </Text>
       <SubHeader>"Whats his Motivation?"</SubHeader>
       <Text>
-        How many times are you on a website and think "I'd love to find whoever
-        designed this website and .... " ---- Well, you know the rest. I want to
-        change that by bringing fresh ideas to the table that support your brand or organization
-        and build its identity. Lets grow together.
+        My goal in this career is to continue to learn and grow every single day and become better at my craft. I love writing code and want to be the best that I can and contribute to projects that I am passionate about. Eventually I want to be a senior tech and lead my own team so I will have the chance to teach others and support them on their journey as well. 
       </Text>
     </Container>
   );

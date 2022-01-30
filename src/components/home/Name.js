@@ -12,7 +12,7 @@ const Name = styled.h2`
 
   @media (max-width: 768px) {
     font-size: 3.5rem;
-    padding-left: 2rem;
+    ${'' /* padding-left: 2rem; */}
   }
 
   @media (max-width: 280px) {

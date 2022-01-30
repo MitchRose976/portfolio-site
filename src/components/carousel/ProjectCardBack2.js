@@ -61,7 +61,7 @@ const ImageCardBack = ({ isFlipped, flipCard }) => {
 const ProjectLink = styled.a`
     background-color: white;
     color: var(--aqua);
-    font-size: 2rem;
+    font-size: 1.5rem;
 `
 
 export default ImageCardBack;

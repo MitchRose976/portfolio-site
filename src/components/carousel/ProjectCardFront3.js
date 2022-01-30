@@ -58,6 +58,8 @@ const ProjectCardFront = ({ isFlipped, flipCard }) => {
         <ProjectTitle>C++ Library Application</ProjectTitle>
         <ProjectDescription className="frontText">
           This is a Library database system I built using C++
+          <br></br>
+          <ProjectLink href="https://drive.google.com/file/d/1GWYJpogwbg1dk4FtvaArMlvAg8jc6Lw5/view?usp=sharing">Watch the walkthrough here</ProjectLink>
         </ProjectDescription>
         <button 
           className="flipButton" 
@@ -81,5 +83,11 @@ const ProjectImage = styled.img`
   object-fit: cover;
   z-index: 10;
 `;
+
+const ProjectLink = styled.a`
+    background-color: white;
+    color: var(--aqua);
+    font-size: 1rem;
+`
 
 export default ProjectCardFront;
