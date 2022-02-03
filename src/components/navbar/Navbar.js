@@ -31,6 +31,9 @@ const Nav = styled.div`
   flex-wrap: wrap;
   background-color: transparent;
   z-index: 999;
+  @media (min-width: 1500px) {
+    padding-right: 2rem;
+  }
   
 `;
 
