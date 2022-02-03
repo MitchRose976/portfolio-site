@@ -10,17 +10,16 @@ function About() {
       <Header>About</Header>
       <SubHeader>"So Who is this Mitch guy?"</SubHeader>
       <Text>
-        Well I am glad you asked! I am a 25 year old front-end developer born
+        Well I am glad you asked! I am a full stack developer born
         and raised in Mississauga, Ontario. My passion for building and creating
-        beatiful things lead me in to pursuing my career in front-end design and
-        development. Coding became a love of mine because every single day I get
+        awesome things lead me in to pursuing my career in coding. Coding became a love of mine because every single day I get
         to learn new things and challenge myself to become better at my craft.
         And really? What is better than that?
       </Text>
       <SubHeader>"What does he do?"</SubHeader>
       <Text>
         Great question! I build full-stack applications in
-        HTML, CSS, Javascript, React, Node and MongoDB. Right now my focus is improving my skills with the MERN stack. My goal for every project is to write clean, simple, and efficient code that will make the end user's experience amazing.
+        HTML, CSS, Javascript, React, Node, Express and MongoDB. Right now my focus is improving my skills with the MERN stack. My goal for every project is to write clean, simple, and efficient code that will make the end user's experience amazing.
       </Text>
       <SubHeader>"Whats his Motivation?"</SubHeader>
       <Text>
